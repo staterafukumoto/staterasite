@@ -1,0 +1,186 @@
+body{
+    background: #111;
+    user-select: none;
+}
+
+/* ::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-top: 2px solid #009cde;
+  border-bottom: 2px solid #faaf3a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444; 
+} */
+
+#header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 56px;
+    display: block;
+
+    line-height: 56px;
+    color: white;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Lexend Deca', sans-serif;
+
+    background: #222;
+    user-select: none;
+    z-index: 20;
+    box-shadow: 0px 11px 35px -2px rgba(0,0,0,0.35);
+    font-size: 24px;
+}
+
+
+#hlogo{
+    padding-top: 3px;
+    height: 50px;
+    width: auto;
+    display: inline;
+}
+
+.beta{
+    background: rgba(0,0,0,0.6);
+    border-radius: 14px;
+    padding-left: 6px;
+    padding-right: 2px;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Lexend Deca', sans-serif;
+    padding-bottom: 4px;
+    padding-top: 4px;
+
+}
+
+.rainbow{
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-size: 1800% 1800%;
+    animation: rainbow 5s ease infinite;
+    border-radius: 14px;
+    padding-left: 6px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+}
+
+@keyframes rainbow { 
+      0%{background-position:0% 82%}
+      50%{background-position:100% 19%}
+      100%{background-position:0% 82%}
+}
+.container{
+    background: var(--sidebar-colour);
+    display: inline-block;
+    user-select: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 4px;
+    border: 1px solid #454448;
+    transition: 0.2s transform ease,
+                0.2s border ease;
+    z-index: 0;
+    border-radius: 8px;
+
+
+}
+
+.container:hover{
+    border: 1px solid #888888;
+    z-index: 2 !important;
+}
+
+.container:active{
+    border: 1px solid #999999;
+    box-shadow: 0px 11px 35px -2px rgba(0,0,0,0.35);
+}
+
+.cont_image{
+    display: inline;
+    width: 320px;
+    height: 180px;
+    cursor: pointer;
+    border: 1px solid #343538;
+    border-radius: 12px;
+}
+
+.cont_label{
+    color: white;
+    display: block;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Lexend Deca', sans-serif;
+    user-select: none;
+    background: rgba(255,255,255,0.1);
+    font-size: 22px;
+    padding-bottom: 3px;
+
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.cont_res{
+    color: #ccc;
+    display: block;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Lexend Deca', sans-serif;
+    user-select: none;
+    font-style: italic;
+    font-size: 12px;
+    background: rgba(255,255,255,0.05);
+
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+
+#cardwrapper{
+    position: absolute;
+    top: 56px;
+    right: 0px;
+    bottom: 0px;
+    left: 400px;
+    z-index: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#banner{
+    height: auto;
+    width: 100%;
+    display: block;
+    /* background: linear-gradient(var(--sidebar-colour), var(--main-bg-colour)); */
+    background: var(--main-bg-colour);
+    text-align: center;
+    user-select: none;
+}
+
+#bheader{
+    color: white;
+    font-size: 35px;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: bold;
+}
+
+#bparagraph{
+    text-align: left;
+    color: white;
+    font-size: 16px;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Lexend Deca', sans-serif;
+    display: block;
+    padding-left: 8vw;
+    padding-right: 8vw;
+}

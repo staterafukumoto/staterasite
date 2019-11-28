@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>statera fukumoto</title>
+    <link 
+        rel="stylesheet" 
+        type="text/css" 
+        href="styles/main.css"
+    >
+    <link 
+        rel="stylesheet" 
+        type="text/css"
+        href="styles/right.css"
+    >
+    <link 
+        rel="stylesheet" 
+        type="text/css"
+        href="styles/socialcolours.css"
+    >
+    <link 
+        rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
+        crossorigin="anonymous"
+    >
+    <link 
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet"
+    >
+    <link 
+        rel="icon" 
+        href="icon.ico"
+    >
+    <meta 
+        name="description" 
+        content="everything statera!"
+    >
+    <meta
+        name="keywords" 
+        content="statera, statera fukumoto, lykos, alopix, furry"
+    >
+    <meta 
+        property="og:image" 
+        content="https://staterafukumoto.github.io/img/webmaster.png"
+    >
+    <meta 
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <link 
+        href="https://fonts.googleapis.com/css?family=Lexend+Deca|Roboto&display=swap" 
+        rel="stylesheet"
+    >
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152605137-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'UA-152605137-1');
+    </script>
+
+</head>
+
+<body>
+
+<input type="text" id="copybox">
+
+<div id="notification"></div>
+
+<div id="header">
+    <i id="hamborger" class="fas fa-bars" onclick="flipOut()"></i>
+    <center><img id="hlogo" draggable="false" src="img/wordmark_white.png"></center> <!--i don't give a fuck that the center tag is depreciated-->
+</div>
+<div id="shadow" onclick="flipIn()"></div>
+<!-- left wrapper -->
+<div id="leftwrapper">
+<div id="contentLeft">
+<div id="featurespot">
+        <a href="http://www.furaffinity.net/view/33464260/" target="_blank">
+            <img class="nosaveimg" id="artfeature" src="img/feature.png" draggable="false">
+        </a>
+        <span class="featuretitle"> featured piece: <span class="artname"> what's up, danger? </span></span>
+        <br> <!-- fuck setting 'display: block' i've had enough modern web shit for now-->
+        <span class="featuretitle"> done by: <span class="artistname"> statera fukumoto </span></span>
+</div>
+
+<div id="socialmedia">
+    <span class="someheader"> site sections: </span>
+    <a href="#" class="somelink linkOne"><i class="fas fa-home"></i> home </a>
+    <a href="wallpapers/" class="somelink linkTwo"><i class="far fa-images"></i> wallpapers </a>
+    <span class="someheader"> external links: </span>
+    <a href="https://twitter.com/staterafukumoto" target="_blank"class="somelink twitter"> <i class="fab fa-twitter"></i> twitter </a>
+    <a href="https://twitter.com/centisanity" target="_blank"class="somelink adtwitter"> <i class="fab fa-twitter"></i> other twitter </a>
+    <a href="https://t.me/lucifur" target="_blank"class="somelink telegram"> <i class="fab fa-telegram-plane"></i> telegram </a>
+    <a href="https://t.me/thestatchat" target="_blank" class="somelink telegramgroup"> <i class="fab fa-telegram-plane"></i> the stat chat </a>
+    <a href="https://www.youtube.com/channel/UC-_dOzDJjQmz491CceAW_Uw" target="_blank" class="somelink youtube"> <i class="fab fa-youtube"></i> youtube </a>
+    <a href="https://reddit.com/u/closetfurry2017" target="_blank" class="somelink reddit"> <i class="fab fa-reddit-alien"></i> reddit </a>
+    <a href="https://steamcommunity.com/id/staterafukumoto/" target="_blank" class="somelink steam"> <i class="fab fa-steam-symbol"></i> steam </a>
+    <a href="https://open.spotify.com/user/nd4pzbqztj181y7khuvdib1on?si=szNWFc2BT1ywyfPRmdXiNg" target="_blank"
+            class="somelink spotify"> <i class="fab fa-spotify"></i> spotify </a>
+    <a href="https://github.com/wayoutware" target="_blank" class="somelink github"> <i class="fab fa-github"></i> github </a>
+    <a href="https://www.furaffinity.net/user/statera" target="_blank" class="somelink furaffinity"> <i class="fas fa-feather-alt"></i> furaffinity </a>
+    <a class="somelink paypal" href="http://paypal.me/staterafukumoto" target="_blank"> <i class="fab fa-paypal"></i> donate with paypal </a>
+</div>
+</div>
+
+<span id="ctitle">commission status: </span>
+<div id="cstatus" class="">
+    <center>
+            <span class="cheader"> drawing: <span class="closed"> closed</span></span> 
+            <span class="sep"> | </span>
+            <span class="cheader"> pixel art: <span class="closed"> closed</span></span>
+    </center>
+</div>
+</div>
+<!-- end of left wrapper -->
+
+<!-- right wrapper -->
+<div id="rightwrapper">
+<br>
+
+<!-- don't forget to assign ID attributes to allow for linking of specific cards -->
+
+<center>
+
+<div class="card">
+    <span class="header"> wallpaper gallery </span>
+    <i class="material-icons link" id="wallpapers" onclick="copyClipboard(this.id)" title="link to this card">link</i>
+    <hr>
+    <p class="cardpara"> here's a collection of wallpapers i've made, and i give to you free to use
+        on the condition you do not claim them as your own. by visiting the gallery you agree to these
+        terms.
+    </p>
+    <a href="wallpapers/"  target="_blank" class="linkbutton">show me the wallpapers</a>
+</div>
+
+<div class="card">
+    <span class="header"> telegram stickers of mine </span>
+    <i class="material-icons link" id="stickers" onclick="copyClipboard(this.id)" title="link to this card">link</i>
+    <hr>
+    <a href="https://t.me/addstickers/staterafukumoto" target="_blank"><img width="250px"src="img/mainpack.png"></a>
+    <a href="https://t.me/addstickers/stateramemes" target="_blank"><img width="250px"src="img/memepack.png"></a>
+</div>
+
+<div class="card" id="playlists">
+    <span class="header"> my spotify playlists </span>
+    <i class="material-icons link" id="playlists" onclick="copyClipboard(this.id)" title="link to this card">link</i>
+    <hr>
+    <a href="https://open.spotify.com/playlist/5zhVOXgIHr7iabQBsQAO6m?si=xbwGSff8T_aybt2emuy3Zg" target="_blank">
+        <img width="250px" src="img/playlists/this is stalloween.jpg"></a>
+    <a href="https://open.spotify.com/user/nd4pzbqztj181y7khuvdib1on/playlist/0uCSDyqqJftYPA4cCmGx2E?si=O-rOsrAxTJ2jnhJOOxv1_g" target="_blank">
+        <img width="250px" src="img/playlists/this is statera.jpg"></a>
+    <a href="https://open.spotify.com/user/nd4pzbqztj181y7khuvdib1on/playlist/5YzcMGimbKUbgnKDPAd24E?si=sG7RRaYhS8254puN43xuxQ" target="_blank">
+        <img width="250px"src="img/playlists/this is sadtera.jpg"></a>
+    <a href="https://open.spotify.com/user/nd4pzbqztj181y7khuvdib1on/playlist/1HeBFodjG5OhWeeXvvytS7?si=21-iCMI4RkCdVJtccrne9Q" target="_blank">
+        <img width="250px"src="img/playlists/this is ragetera.jpg"></a>
+    <a href="https://open.spotify.com/user/nd4pzbqztj181y7khuvdib1on/playlist/2RGxEnmjwru08uMPp9DhZd?si=NCSRRnFURASkGUV-l6-Gaw" target="_blank">
+        <img width="250px"src="img/playlists/this is sadtera 2.jpg"></a>
+    <a href="https://open.spotify.com/playlist/1KKcikeaXzgDiiQK0w3Dq5?si=rFJeU3RMRZS1CLuvPkWlkg" target="_blank">
+        <img width="250px" src="img/playlists/songs to brawl to.jpg"></a>
+    <a href="https://open.spotify.com/playlist/6W2kCOtjUoXYtnxvbfQ4XQ?si=wcX140XlQG-1BCY69jJBBA" target="_blank">
+        <img width="250px" src="img/playlists/powercoding.jpg"></a>
+</div>
+
+<div class="card" id="tweets">
+    <span class="header"> my shitpost tweets </span>
+    <i class="material-icons link" id="tweets" onclick="copyClipboard(this.id)" title="link to this card">link</i>
+    <hr>
+    <a class="twitter-timeline" 
+        href="https://twitter.com/staterafukumoto?ref_src=twsrc%5Etfw"
+        data-theme="dark"
+        data-link-color="#faaf3a"
+        data-chrome="noheader,transparent,noborders,nofooter"
+        data-dnt="true"
+        >
+        tweets by staterafukumoto</a> 
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+<div class="card" id="meem">
+    <span class="header"> ad-block haiku </span>
+    <i class="material-icons link" id="iuseanadblock" onclick="copyClipboard(this.id)" title="link to this card">link</i>
+    <hr>
+    <p id="" class="">
+        you're using an ad block<br>
+        but this site does not have ads<br>
+        so yo, i don't care. <br>
+    </p>
+    <img src="img/hell_welcome.gif" width="50%" class="squaredoff">
+    <br>
+    <a href="img/hell_welcome.gif" target="_blank" class="linkbutton">have a cool gif for your troubles</a>
+    <br>
+</div>
+
+</center>
+</div>
+<script src="scripts/response.js"></script>
+<script src="scripts/clipboardlogic.js"></script>
+<script src="scripts/waywork.js"></script>
+<script src="scripts/nf.js"></script>
+<script src="scripts/cntdwn.js"></script>
+<script src="scripts/ad-gag.js"></script>
+</body>

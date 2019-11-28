@@ -1,0 +1,82 @@
+*{
+    --card-colour: #242730;
+}
+
+#rightwrapper{
+    position: absolute;
+    /* background: red; */
+    top: 50px;
+    right: 0px;
+    bottom: 0px;
+    left: 400px;
+    z-index: 0;
+    overflow: auto;
+}
+
+.card{
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    width: 70%;
+    max-width: 800px;
+    display: block;
+    background: var(--card-colour);
+    box-shadow: 0px 0px 48px -12px rgba(0,0,0,0.75);
+    color: #ededed;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, ubuntu, sans-serif; */
+    font-family: 'Lexend Deca', sans-serif;
+
+    /* i have been fucking with this for about two days now, and i really just want to cry */
+    /* clip-path: polygon(20px 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%, 0 20px); */
+
+    transition: 0.2s clip-path ease;
+
+    border-radius: 24px;
+    border: 1px solid #454448;
+
+
+}
+
+hr{
+    display: block; 
+    height: 2px;
+    border: 0; 
+    padding: 0;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+#countdowndisplay{
+    color: white;
+    background: black;
+    font-size: 32px;
+    font-family: monospace;
+    user-select: none;
+
+    cursor: default;
+    display: inline-block;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    /* border: 1px solid white; */
+    clip-path: polygon(15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 15px);
+}
+
+.cardpara{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.header{
+    font-size: 28px;
+    user-select: none;
+    display: inline-block;
+    margin-bottom: 8px !important;
+}
+
+.squaredoff{
+    clip-path: polygon(15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 15px);
+}
