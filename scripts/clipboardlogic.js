@@ -1,4 +1,4 @@
-window.domain = "https://staterafukumoto.github.io"
+window.domain = "http://stateraliksguys.com"
 window.sep = "#"
 
 function copyClipboard(input){
