@@ -5,12 +5,13 @@
 #rightwrapper{
     position: absolute;
     /* background: red; */
-    top: 50px;
+    top: 56px;
     right: 0px;
     bottom: 0px;
     left: 400px;
     z-index: 0;
     overflow: auto;
+    background: var(--main-bg-colour);
 }
 
 .card{
