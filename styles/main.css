@@ -39,9 +39,7 @@ body{
     user-select: none;
     z-index: 20;
     box-shadow: 0px 11px 35px -2px rgba(0,0,0,0.35);
-    /* border-bottom: 1px solid #343538; */
-    border-bottom-right-radius: 16px;
-    border-bottom-left-radius: 16px;
+
 }
 
 #hamborger{
@@ -82,11 +80,12 @@ body{
 
 #contentLeft{
     position: absolute;
-    top: 48px;
+    top: 56px;
     bottom: 80px;
     width: 100%;
     left: 0px;
     overflow: auto;
+    user-select: none;
 }
 
 #cstatus{
@@ -145,7 +144,8 @@ body{
 
 #artfeature{
     width: 100%;
-    height: auto;
+    height: 128px;
+    object-fit: cover;
 }
 
 .featuretitle{
@@ -155,11 +155,33 @@ body{
     user-select: none;
     font-weight: 600;
     padding-top: 4px;
+    display: none;
+}
+
+#profilePic{
+    position: absolute;
+    width: 92px;
+    height: 92px;
+    left: calc(50% - 46px);
+    top: 92px;
+    border-radius: 24px;
+    border: 3px solid var(--sidebar-colour);
+    background-color: grey;
+    user-select: none;
 }
 
 .artistname, .artname{
     opacity: 0.6;
     font-weight: 300;
+}
+
+.sideTitle{
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+    user-select: none;
+    font-size: 22px;
+    display: block;
+    padding-top: 60px;
 }
 
 .someheader{
@@ -170,15 +192,17 @@ body{
     padding-left: 12px;
     margin-top: 8px;
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 900;
     display: block;
     left: 0px;
     right: 0px;
     /* background: linear-gradient(to right,transparent,rgba(0,0,0,0.2),transparent); */
     /* background: rgba(0,0,0,0.1); */
-    background: rgba(255,255,255,0.02);
-    border-top: 1px rgba(255,255,255,0.3) solid;
+    /* background: rgba(255,255,255,0.02); */
+    border-top: 2px rgba(255,255,255,0.3) solid;
     margin-bottom: 5px;
+    /* border-top-left-radius: 16px; */
+    border-top-right-radius: 22px;
 }
 
 a{

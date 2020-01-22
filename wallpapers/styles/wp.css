@@ -152,6 +152,10 @@ body{
     bottom: 0px;
     left: 400px;
     z-index: 0;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
     overflow-y: auto;
     overflow-x: hidden;
 }
@@ -172,6 +176,10 @@ body{
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     font-family: 'Lexend Deca', sans-serif;
     font-weight: bold;
+    display: inline-block;
+
+    margin-left: 8vw;
+    margin-right: 8vw;
 }
 
 #bparagraph{
@@ -181,6 +189,6 @@ body{
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     font-family: 'Lexend Deca', sans-serif;
     display: block;
-    padding-left: 8vw;
-    padding-right: 8vw;
+    margin-left: 8vw;
+    margin-right: 8vw;
 }
