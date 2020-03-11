@@ -1,0 +1,85 @@
+*:not(i){
+    font-family: "Comic Sans MS" !important;
+    --main-bg-colour: red;
+    --header-colour: cyan;
+    --sidebar-colour: magenta;
+    --card-colour: grey;
+}
+
+.card{
+    border-radius: 0px !important;
+    transform: rotate(2deg) !important;
+    border-bottom-left-radius: 48px !important;
+
+    color: blue !important;
+}
+
+.card:nth-child(odd){
+    transform: rotate(-2deg) !important;
+    background-color: darkgray;
+    border-bottom-left-radius: 0px !important;
+    border-bottom-right-radius: 48px !important;
+
+    color: red !important;
+}
+
+.somelink{
+    color: blue !important;
+    text-decoration: underline;
+}
+
+/* #hlogo{
+    animation-name: spin;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; 
+    animation-direction: alternate-reverse;
+} */
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+        filter: invert(1);
+    }
+    to {
+        transform:rotate(360deg);
+        filter: invert(0);
+    }
+}
+
+.wackyeffects{
+    animation: rainbow 3s ease infinite;
+    animation-direction: alternate-reverse;
+    text-decoration: underline;
+}
+
+@keyframes rainbow { 
+    0% {color: red}
+    20% {color: blue}
+    40% {color: lime}
+    60% {color: greenyellow}
+    80% {color: yellow}
+    100% {color: orange}
+}
+
+#marquee{
+    position: absolute;
+    display: block;
+    z-index: 100;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    padding-bottom: -60px;
+    /* pointer-events: none; */
+    /* background: rgba(0,0,0,0.3); */
+    pointer-events: none;
+}
+
+#oops{
+    height: 256px;
+    pointer-events: auto !important;
+}
+
+#foolscard{
+    display: inline-block !important;
+}

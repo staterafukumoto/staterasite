@@ -125,6 +125,14 @@ function generateID(){
     }
 }
 
+function addCSS(filename){
+    var head = document.getElementsByTagName('head')[0];
+    var style = document.createElement('LINK');
+    style.href = filename;
+    style.rel = 'stylesheet';
+    head.append(style);
+}
+
 
 function generateColor(){
     return '#'+Math.floor(Math.random()*16777215).toString(16);

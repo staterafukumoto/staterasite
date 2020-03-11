@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>statera fukumoto</title>
+    <title>statera fukumoto</title>
+
+    <!-- <link rel="stylesheet" type="text/css" href="styles/april-fools.css"> -->
+
     <link 
         rel="stylesheet" 
         type="text/css" 
@@ -90,6 +93,26 @@
 <!-- don't forget to assign ID attributes to allow for linking of specific cards -->
 
 <center>
+<div class="card" id="foolscard">
+    <span class="header"> april fools! </span>
+    <i class="material-icons link" id="statchat" onclick="copyClipboard(this.id)" title="link to this card">link</i>
+    <hr>
+    <p class="cardpara">
+        <img src="img/leekspin.gif" height="180px" draggable="false"><br><br>
+
+        oh no you have been <span class="wackyeffects"> bamboozled </span>
+
+        <br>
+
+        <i> &darr; press play for the BEST effect &darr;</i><br>
+        <i> modern browsers are mean and won't autoplay</i>
+        <br><br>
+
+        <audio controls id="leeksound">
+            <source src="img/fuck.mp3">
+        </audio>
+    </p>
+</div>
 
 <div class="card">
     <span class="header"> new logo </span>
@@ -175,10 +198,15 @@
 
 </center>
 </div>
+
+<marquee id="marquee" scrolldelay="5" truespeed> <img id="oops" src="img/meme_garbage.gif"> </marquee>
+
 <script src="scripts/response.js"></script>
 <script src="scripts/clipboardlogic.js"></script>
 <script src="scripts/waywork.js"></script>
 <script src="scripts/nf.js"></script>
 <script src="scripts/cntdwn.js"></script>
 <script src="scripts/sidebar.js"></script>
+
+<script src="scripts/april-fools.js"></script>
 </body>
