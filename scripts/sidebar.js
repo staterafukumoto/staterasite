@@ -5,3 +5,10 @@ async function load_home(){
 }
 
 document.body.onload = load_home
+
+function enableLightMode(){
+    notificationInput("we don't do that here, suffer.")
+    window.setTimeout(function(){
+        flippyBoi()
+    },1500)
+}

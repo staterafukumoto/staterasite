@@ -169,10 +169,10 @@ body{
     position: absolute;
     width: 92px;
     height: 92px;
-    left: calc(50% - 46px);
+    left: calc(50% - 46px - 3px);
     top: 92px;
-    border-radius: 24px;
-    border: 3px solid var(--sidebar-colour);
+    border-radius: 999px;
+    border: 6px solid var(--sidebar-colour);
     background-color: grey;
     user-select: none;
 }
@@ -227,6 +227,7 @@ a{
     transition: 0.2s padding-left ease, 0.2s background ease, 0.2s opacity ease;
     color: white;
     font-weight: 100;
+    cursor: pointer;
 }
 
 .somelink:hover{
@@ -398,5 +399,9 @@ a{
 }
 
 #foolscard{
+    display: none;
+}
+
+#funstuff{
     display: none;
 }
