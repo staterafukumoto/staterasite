@@ -1,0 +1,60 @@
+#paywrapper{
+    position: absolute;
+    display: inline-block;
+    left: 32px;
+    right: 32px; 
+    top: 32px;
+    /* height: 280px; */
+    background: var(--card-colour);
+    border: 1px solid #454448;
+    border-radius: 8px;
+
+}
+
+#cardwrapper{
+    display: inline-block;
+    justify-content: center;
+    user-select: none;
+}
+
+.moneyheader{
+    display: block;
+    font-family: 'Lexend Deca', sans-serif !important;
+    color: white;
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 12px;
+
+}
+
+#moneyinput{
+    font-family: 'Lexend Deca', sans-serif !important;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid white;
+    /* border-radius: 6px; */
+    /* background: rgba(255,255,255,0.1); */
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    transition: 0.2s color ease, 0.2s background ease;
+}
+
+#moneyinput:focus{
+    color: #adadad;
+    border-bottom: 1px solid transparent;
+    background: rgba(255,255,255,0.1);
+
+}
+
+#moneypic{
+    width: 92px;
+    height: 92px;
+    border-radius: 999px;
+    border: 6px solid white;
+    background-color: grey;
+    user-select: none;
+    display: block;
+    margin-bottom: 10px;
+}
