@@ -20,7 +20,7 @@
 .moneyheader{
     display: block;
     font-family: 'Lexend Deca', sans-serif !important;
-    color: white;
+    color: var(--text-colour);
     font-size: 20px;
     padding-bottom: 10px;
     padding-top: 12px;
@@ -35,7 +35,7 @@
     border-bottom: 1px solid white;
     /* border-radius: 6px; */
     /* background: rgba(255,255,255,0.1); */
-    color: white;
+    color: var(--text-colour);
     text-align: center;
     font-size: 25px;
     transition: 0.2s color ease, 0.2s background ease;
@@ -57,4 +57,11 @@
     user-select: none;
     display: block;
     margin-bottom: 10px;
+}
+
+.paymentsep{
+    background-color: white;
+    width: 75%;
+    height: 1px;
+    display: block;
 }

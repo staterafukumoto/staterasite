@@ -11,3 +11,7 @@ function openPaypal(){
         alert("you can't donate nothing")
     }
 }
+
+function fillMoney(amnt){
+    document.getElementById("moneyinput").value = "US$" + amnt
+}

@@ -1,6 +1,3 @@
-*{
-}
-
 #rightwrapper{
     position: absolute;
     /* background: red; */
@@ -23,7 +20,7 @@
     display: block;
     background: var(--card-colour);
     box-shadow: 0px 0px 48px -12px rgba(0,0,0,0.75);
-    color: #ededed;
+    color: var(--text-colour);
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, ubuntu, sans-serif; */
     font-family: 'Lexend Deca', sans-serif;
 
@@ -47,7 +44,7 @@ hr{
 }
 
 #countdowndisplay{
-    color: white;
+    color: var(--text-colour);
     background: black;
     font-size: 32px;
     font-family: monospace;
