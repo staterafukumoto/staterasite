@@ -32,11 +32,12 @@
     background: transparent;
     outline: none;
     border: none;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var(--text-colour);
     /* border-radius: 6px; */
     /* background: rgba(255,255,255,0.1); */
     color: var(--text-colour);
     text-align: center;
+    text-transform: lowercase;
     font-size: 25px;
     transition: 0.2s color ease, 0.2s background ease;
 }
@@ -52,7 +53,7 @@
     width: 92px;
     height: 92px;
     border-radius: 999px;
-    border: 6px solid white;
+    border: 6px solid var(--small-text-colour);
     background-color: grey;
     user-select: none;
     display: block;

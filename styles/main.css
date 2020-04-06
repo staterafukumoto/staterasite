@@ -8,6 +8,7 @@
     --secondary-accent: #faaf3a;
     --text-colour: #ededed;
     --small-text-colour: #cccccc;
+    --standard-border-colour: #454448;
 }
 
 body{
@@ -50,6 +51,7 @@ body{
     user-select: none;
     z-index: 20;
     box-shadow: 0px 11px 35px -2px rgba(0,0,0,0.35);
+    border-bottom: 1px solid var(--standard-border-colour);
 
 }
 
@@ -177,7 +179,7 @@ body{
     top: 92px;
     border-radius: 999px;
     border: 6px solid var(--sidebar-colour);
-    background-color: grey;
+    background-color: var(--sidebar-colour);
     user-select: none;
 }
 
@@ -238,6 +240,11 @@ a{
     padding-left: 22px;
     background: rgba(255,255,255,0.05);
 
+}
+
+.currentActive{
+    color: var(--primary-accent) !important;
+    border-left: 6px solid var(--primary-accent);
 }
 
 .disabled{
@@ -379,7 +386,7 @@ a{
     cursor: pointer;
 
     transition: 0.2s filter ease;
-    border: 2px solid #909090;
+    border: 2px solid var(--standard-border-colour);
     transition: 0.2s filter ease;
 }
 
