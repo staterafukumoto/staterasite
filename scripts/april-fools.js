@@ -15,15 +15,6 @@ function pranks(){
     })
 }
 
-function flippyBoi(){
-    if (window.isFlipped == true){
-        document.body.style.transform = "rotate(0deg)"
-        window.isFlipped = false
-    } else{
-        document.body.style.transform = "rotate(180deg)"
-        window.isFlipped = true
-    }
-}
 
 var aprilFools = {
     month: 3,

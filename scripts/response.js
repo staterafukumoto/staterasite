@@ -69,3 +69,14 @@ function flipIn(){
     document.getElementById("shadow").style.display = "none"
     document.getElementById("hamborger").onclick = flipOut
 }
+
+
+function flippyBoi(){
+    if (window.isFlipped == true){
+        document.body.style.transform = "rotate(0deg)"
+        window.isFlipped = false
+    } else{
+        document.body.style.transform = "rotate(180deg)"
+        window.isFlipped = true
+    }
+}
