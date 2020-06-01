@@ -1,0 +1,56 @@
+<style>
+    .ccxt-text{
+        font-family: sans-serif !important;
+        font-family: 16px !important;
+    }
+
+    .ccxt-button{
+        display: inline;
+        font-family: sans-serif !important;
+        cursor: pointer;
+        user-select: none;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        color: black;
+        background-image: -webkit-linear-gradient(
+			#ffffff 0%, #F6F6F6 	30%, 
+			#F3F3F3 45%, #EDEDED 	60%, 
+            #eeeeee 100%);
+        border-radius: 3px;
+        box-shadow: 0px 0px 1px rgba(0,0,0,0.20);
+        border:1px solid #9C9C9C;
+
+        
+        
+    }
+
+    .ccxt-button:active{
+        border-color:#705ebb;
+			background-image:-webkit-linear-gradient(
+			#acc5e9 0%, 		#a3c0f2 18%, 
+			#61a0ed 39%,		#55a3f2 70%, 
+			#82c2f1 91.72%, 	#9AD2F2 100%); 
+			box-shadow: 0px 0px 1px rgba(0,0,0,0.65);	
+    }
+
+
+
+    .separate{
+        display: block;
+        height: 5px;
+    }
+</style>
+
+
+<center>
+<span class="separate"></span>
+<span class="ccxt-text"> this site uses cookies for analytics.</span>
+<span class="separate"></span>
+
+<span class="ccxt-button" onclick="closeThis()"> that's cool </span>
+<span> &nbsp </span>
+<span class="ccxt-button" onclick="noThanks()"> no thanks </span>
+
+</center>

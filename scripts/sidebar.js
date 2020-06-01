@@ -1,7 +1,9 @@
 const content = document.getElementById("leftwrapper")
+const cookieconsent = document.getElementById("cookieconsent")
 
 async function load_home(){
     content.innerHTML = await (await fetch('/sidebar.html')).text();
+    load_cookie()
     assignMarker()
 }
 
@@ -16,4 +18,21 @@ function assignMarker(){
         }
     } 
 }
+
+async function load_cookie(){
+    if (localStorage["cc-consent"] != "true"){
+        cookieconsent.classList = "cookieconsentactive"
+        cookieconsent.innerHTML = await (await fetch('/cookieconsent.html')).text()
+    }
+}
+
+function closeThis(){
+    localStorage["cc-consent"] = "true"
+    removeTag("cookieconsent")
+}
+
+function noThanks(){
+    window.location.href = "http://corndog.io/"
+}
+
 document.body.onload = load_home
