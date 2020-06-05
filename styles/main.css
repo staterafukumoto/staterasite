@@ -470,3 +470,8 @@ a{
     background-color: var(--modal-bg);
     color: var(--text-colour)
 }
+
+
+.drkbtn{
+    border-color: white !important; 
+}
