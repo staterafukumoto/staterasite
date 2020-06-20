@@ -15,11 +15,10 @@
     padding-bottom: 14px;
     margin-top: 12px;
     margin-bottom: 12px;
-    width: 70%;
+    width: 75%;
     max-width: 800px;
     display: block;
     background: var(--card-colour);
-    box-shadow: 0px 0px 48px -12px rgba(0,0,0,0.75);
     color: var(--text-colour);
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, ubuntu, sans-serif; */
     font-family: 'Lexend Deca', sans-serif;
@@ -40,7 +39,7 @@ hr{
     height: 2px;
     border: 0; 
     padding: 0;
-    border-top: 1px solid rgba(255,255,255,0.2);
+    border-top: 1px solid var(--standard-border-colour);
 }
 
 #countdowndisplay{
