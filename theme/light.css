@@ -1,0 +1,28 @@
+*{
+    --main-bg-colour: #ededed;
+    --header-gradient: linear-gradient(to bottom, white 0%,#d4d4d4 100%);
+    --sidebar-colour: white;
+    --card-colour: white;
+
+    --primary-accent: #0078fe;
+    --secondary-accent: #aa6900;
+
+    --text-colour: black;
+    --some-text-colour: #222;
+    --some-header-colour: #444;
+    --some-hover-bg: rgba(0,0,0,0.05);
+    --small-text-colour: #212121;
+    --standard-border-colour: #c8c8c8;
+
+    --comm-sidebar-colour: #f7f7f7;
+    --modal-bg: #212121;
+
+    --msg-box-gradient: linear-gradient(to top, #0053b0,#0078fe);
+    --msg-box-text-color: white;
+
+    --invert-state: 0.9;
+
+    --sb-track-colour: transparent;
+    --sb-thumb-colour: #adadad;
+    --sb-thumb-colour-hover: #8b8b8b;
+}

@@ -33,9 +33,9 @@ function showSidebar(){
 function logoSet(input){
     //accepts 'icon' or 'wordmark'
     if (input == "icon"){
-        document.getElementById("hlogo").src = "img/logo_white.png"
+        document.getElementById("hlogo").src = "/img/logo_white.png"
     } else if (input == "wordmark"){
-        document.getElementById("hlogo").src = "img/wordmark_white.png"    
+        document.getElementById("hlogo").src = "/img/wordmark_white.png"    
     }
 }
 

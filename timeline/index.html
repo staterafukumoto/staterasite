@@ -1,16 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>the stat chat - statera fukumoto</title>
+    <title>twitter timeline - statera fukumoto</title>
     <link 
         rel="stylesheet" 
         type="text/css" 
-        href="styles/chat.css"
-    >
-    <link 
-        rel="stylesheet" 
-        type="text/css" 
-        href="../styles/main.css"
+        href="/styles/main.css"
     >
     <link 
         id="themesection"
@@ -21,7 +16,17 @@
     <link 
         rel="stylesheet" 
         type="text/css" 
-        href="../styles/socialcolours.css"
+        href="/timeline.css"
+    >
+    <link 
+        rel="stylesheet" 
+        type="text/css" 
+        href="/styles/right.css"
+    >
+    <link 
+        rel="stylesheet" 
+        type="text/css" 
+        href="/styles/socialcolours.css"
     >
     <link 
         rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
@@ -34,7 +39,7 @@
     >
     <meta 
         name="description" 
-        content="the stat chat, a group chat by statera alopix fukumoto"
+        content="BLANK WEBSITE"
     >
     <meta
         name="keywords" 
@@ -70,7 +75,7 @@
 
 <div id="header">
         <i id="hamborger" class="fas fa-bars" onclick="flipOut()"></i>
-        <center><img id="hlogo" draggable="false" src=""></center>
+        <center><img id="hlogo" draggable="false" src="../img/wordmark_white.png"></center>
 </div>
 
 <div id="leftwrapper">
@@ -79,64 +84,34 @@
 <div id="shadow" onclick="flipIn()"></div>
 
 <!-- end of left wrapper -->
-<div id="cookieconsent"></div>
 
-<div id="cardwrapper">
-
-<div id="banner">
-    <br>
-    
-    <!-- <center> </center> -->
-
-    <center>
-        <table>
-            <tr>
-              <th><img src="imgs/logo-clear.png" draggable="false" id="chathero"></th>
-              <th><span id="bheader">the stat chat</span></th>
-            </tr>
-        </table>
-    </center>
-    <br>
-    <span id="bparagraph">
-        <center>
-            a group chat by furries, for furries (who have common decency). view the rules below and feel free to stop by
-        </center>
-    </span>
-</div>
-<br>
-
-<object data="rules.htm" id="rules">
-    oh fuck your browser is too crap to embed this document. <br>
-    consider getting updating your shit, or just clicking "enlarge rules"
-</object> 
-<br>
-<center> 
-    <span class="btn btn-enlarge" onclick="enlargeRules()"><i class="fas fa-expand"></i> &nbsp; enlarge </i></span> 
-    <span class="btn btn-join" onclick="joinGroup()"> join on telegram &nbsp; <i class="fab fa-telegram-plane"></i></span>
-
+<div id="rightwrapper">
+<center>
+    <div class="card alwaysdark" id="tweets">
+        <span class="header alwaysdarktext"> statera's cursed comments </span>
+        <i class="material-icons link" id="tweets" onclick="copyClipboard(this.id)" title="link to this card">link</i>
+        <hr>
+        <a class="twitter-timeline" 
+            href="https://twitter.com/staterafukumoto?ref_src=twsrc%5Etfw"
+            data-theme="dark"
+            data-link-color="#faaf3a"
+            data-chrome="noheader,transparent,noborders,nofooter"
+            data-dnt="true"
+        >
+            <span class="linkbutton alwaysdarktext">fetching tweets...</span>
+        </a> 
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
 </center>
 
-<br>
-
-<div id="didntwork">
-
-    <span class="dwtext"> if telegram didn't open, <u class="dwlink" onclick="openWeb()">click here</u></span>
-
-    <span class="dwclose" onclick="closeDiag()">
-        <i class="fas fa-times"></i>
-    </span>
-
 </div>
 
+<div id="cookieconsent"></div>
 
-<script src="rules.js"></script>
-<script src="bad_responsive.js"></script>
+<script src="/scripts/response.js"></script>
 <script src="/scripts/sidebar.js"></script>
 <script src="/scripts/waywork.js"></script>
 
 <script src="/scripts/theme_manager.js"></script>
-
-
-
 
 </body>

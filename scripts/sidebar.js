@@ -109,7 +109,8 @@ const phrases = [
     "yeah, nah mate",
     "dollarydoo",
     "you will have your bad smells",
-    "he's gay and we're also all gay"
+    "he's gay and we're also all gay",
+    "hide the pain"
 ]
 
 async function load_home(){
@@ -117,6 +118,7 @@ async function load_home(){
     load_cookie()
     assignMarker()
     pickSubtitle()
+    checkTheme()
 }
 
 function assignMarker(){

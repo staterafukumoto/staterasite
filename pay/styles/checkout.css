@@ -1,12 +1,12 @@
 #paywrapper{
     position: absolute;
     display: inline-block;
-    left: 32px;
-    right: 32px; 
+    left: 10vw;
+    right: 10vw; 
     top: 32px;
     /* height: 280px; */
     background: var(--card-colour);
-    border: 1px solid #454448;
+    border: 1px solid var(--standard-border-colour);
     border-radius: 8px;
 
 }

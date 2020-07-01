@@ -16,6 +16,7 @@ body{
       50%{background-position:100% 19%}
       100%{background-position:0% 82%}
 }
+
 .container{
     background: var(--sidebar-colour);
     display: inline-block;
@@ -25,7 +26,7 @@ body{
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 4px;
-    border: 1px solid #454448;
+    border: 1px solid var(--standard-border-colour);
     transition: 0.2s transform ease,
                 0.2s border ease;
     z-index: 0;
@@ -54,7 +55,7 @@ body{
 }
 
 .cont_label{
-    color: white;
+    color: var(--text-colour);
     display: block;
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     font-family: 'Lexend Deca', sans-serif;
@@ -108,7 +109,7 @@ body{
 
 #bparagraph{
     text-align: left;
-    color: white;
+    color: var(--text-colour);
     font-size: 16px;
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     font-family: 'Lexend Deca', sans-serif;
@@ -126,7 +127,7 @@ body{
 }
 
 #bheader{
-    color: white;
+    color: var(--text-colour);
     font-size: 24px;
     font-family: 'Lexend Deca', sans-serif;
     font-weight: bold;
@@ -147,7 +148,10 @@ body{
     margin-right: 10vw;
     height: calc(90% - 250px); 
     font-family: 'Lexend Deca', sans-serif !important;
-    border-radius: 24px;
+    border-radius: 12px;
+    border: 1px solid var(--standard-border-colour);
+
+    filter: invert(var(--invert-state));
 }
 
 .btn{
@@ -160,7 +164,7 @@ body{
 
     margin-bottom: 5px;
     font-family: 'Lexend Deca', sans-serif !important;
-    color: white;
+    color: var(--text-colour);
     
     user-select: none;
     cursor: pointer;
@@ -190,7 +194,7 @@ body{
     right: 0px;
     bottom: 0px;
     height: 64px;
-    background: #0072bc;
+    background: var(--primary-accent);
     user-select: none;
     
     visibility: hidden;
@@ -198,6 +202,7 @@ body{
 
 .dwtext{
     line-height: 64px;
+    /* color: var(--text-colour); */
     color: white;
     font-family: 'Lexend Deca', sans-serif !important;
     padding-left: 12px;

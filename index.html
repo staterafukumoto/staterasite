@@ -11,6 +11,12 @@
         href="styles/main.css"
     >
     <link 
+        id="themesection"
+        rel="stylesheet" 
+        type="text/css" 
+        href="/theme/dark.css"
+    >
+    <link 
         rel="stylesheet" 
         type="text/css"
         href="styles/right.css"
@@ -121,11 +127,21 @@
 </div>
 
 <div class="card">
+    <span class="header"> tweets have moved </span>
+    <hr>
+        <p class="cardpara">            
+            they were starting to cause issues with more complex sites layouts i am testing in the future.
+            anyways, click below to access that now
+        </p>
+        <a href="timeline/"  target="" class="linkbutton">live twitter timeline</a>
+</div>
+
+<div class="card">
     <span class="header"> new logo </span>
     <i class="material-icons link" id="newlogo" onclick="copyClipboard(this.id)" title="link to this card">link</i>
     <hr>
     <p class="cardpara">
-        <img src="img/wordmark_white.png" height="48px" draggable="false"><br><br>
+        <img src="img/wordmark_white.png" height="48px" draggable="false" class="img_invertable"><br><br>
         i have redesigned my logo, once again, to be more representative and scalable
         with more thought put into typography. you can see it above, in the header,  
         and the link below will take you to it being included in a wallpaper from
@@ -138,13 +154,13 @@
     <span class="header"> the stat chat, redux </span>
     <i class="material-icons link" id="statchat" onclick="copyClipboard(this.id)" title="link to this card">link</i>
     <hr>
-    <p class="cardpara">
-        <img src="statchat/imgs/logo-clear.png" height="48px" draggable="false"><br><br>
+        <p class="cardpara">
+            <img src="statchat/imgs/logo-clear.png" height="48px" draggable="false"><br><br>
 
-        a group chat by furries, for furries (who have common decency). the stat chat has been redesigned for the new
-        decade, with a completely redone (and much more thorough) rule set, a slick new logo, and brand new identity.
-    </p>
-    <a href="statchat/"  target="" class="linkbutton">see more...</a>
+            a group chat by furries, for furries (who have common decency). the stat chat has been redesigned for the new
+            decade, with a completely redone (and much more thorough) rule set, a slick new logo, and brand new identity.
+        </p>
+        <a href="statchat/"  target="" class="linkbutton">see more...</a>
 </div>
 
 <div class="card">
@@ -186,7 +202,7 @@
         <img width="250px" src="img/playlists/powercoding.jpg"></a>
 </div>
 
-<div class="card" id="tweets">
+<!-- <div class="card" id="tweets">
     <span class="header"> twitter live-feed </span>
     <i class="material-icons link" id="tweets" onclick="copyClipboard(this.id)" title="link to this card">link</i>
     <hr>
@@ -196,10 +212,11 @@
         data-link-color="#faaf3a"
         data-chrome="noheader,transparent,noborders,nofooter"
         data-dnt="true"
-        >
+        id="twitterlivefeed"
+    >
         tweets by staterafukumoto</a> 
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
+</div> -->
 
 <div class="card" id="version">
     <span class="header"> site version </span>
@@ -222,6 +239,8 @@
 <script src="scripts/cntdwn.js"></script>
 <script src="scripts/sidebar.js"></script>
 <script src="scripts/siteversion.js"></script>
+
+<script src="scripts/theme_manager.js"></script>
 
 <!-- <script src="scripts/april-fools.js"></script> -->
 </body>
