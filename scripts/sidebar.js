@@ -110,7 +110,24 @@ const phrases = [
     "dollarydoo",
     "you will have your bad smells",
     "he's gay and we're also all gay",
-    "hide the pain"
+    "hide the pain",
+    "goth gf",
+    "i met heather chandler and all i got was abused",
+    "downward spiral 🌀",
+    "karen",
+    "subscribe to dolan dark",
+    "subscribe to grandayy",
+    "#stateraisoverparty",
+    "2010s emo mommy",
+    "dump truck ass",
+    "nooooooooooooooo",
+    "street smarts!",
+    "i'm hungry",
+    "(not clickbait)",
+    "batchry",
+    "na no",
+    "that's my wife!",
+    "*unreal sippage*"
 ]
 
 async function load_home(){
