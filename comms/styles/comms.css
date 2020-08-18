@@ -1,0 +1,63 @@
+.commdisplay{
+    display: block;
+    width: 100%;
+    /* height: 128px; */
+    /* background-color: rgba(127,127,127,0.2); */
+
+    /* text-align: left; */
+    user-select: none; /*everyone else */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    cursor: default;
+}
+
+.commItem{
+    align-items: left;
+    display: block;
+    text-align: right;
+}
+
+td{
+    /* border: 1px solid red; */
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.tdcomms{
+    text-align: right !important;
+}
+
+.commsOpen{
+    /* color: lime; */
+    color: var(--text-color);
+}
+
+.commsClosed{
+    color: red;
+}
+
+.stickertdbox{
+    font-family: 'Lexend Deca', sans-serif !important;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--small-text-colour);
+    color: var(--small-text-colour);
+    text-align: right;
+    transition: 0.2s color ease, 0.2s background ease;
+    
+    font-size: 16px;
+    width: 25%;
+
+    border-radius: 0px;
+}
+
+.stickertdbox:focus{
+    color: #adadad;
+    border-bottom: 1px solid transparent;
+    background: rgba(255,255,255,0.1);
+}
+
+.stickertypetext{
+    width: 50%;
+}

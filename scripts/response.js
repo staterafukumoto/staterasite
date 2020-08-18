@@ -1,19 +1,37 @@
+// easy config
+var smBreakPoint = 900
+
+
+// code
 function checkWidth(){
     var width= window.innerWidth
     if (mobilecheck() == true){
         //fuck me i got nothing
         hideSidebar()
         mobileSidebar()
+        mobileHeader()
         logoSet("icon")
-    } else if(width < 842){
+    } else if(width < smBreakPoint){
         hideSidebar()
         logoSet("icon")
         desktopSidebar()
+        mobileHeader()
     } else{
         showSidebar()
         logoSet("wordmark")
         desktopSidebar()
+        desktopHeader()
     }
+}
+
+function mobileHeader(){
+    document.getElementById("header").classList = "headerDispMobile"
+    document.getElementById("leftwrapper").classList = "sidebarDispMobile"
+}
+
+function desktopHeader(){
+    document.getElementById("header").classList = "headerDispDesktop"
+    document.getElementById("leftwrapper").classList = "sidebarDispDesktop"
 }
 
 function hideSidebar(){

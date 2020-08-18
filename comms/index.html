@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>commissions - statera fukumoto</title>
+    <link 
+        rel="stylesheet" 
+        type="text/css" 
+        href="/styles/main.css"
+    >
+    <link 
+        id="themesection"
+        rel="stylesheet" 
+        type="text/css" 
+        href="/theme/dark.css"
+    >
+    <link 
+        rel="stylesheet" 
+        type="text/css" 
+        href="/styles/right.css"
+    >
+    <link 
+        rel="stylesheet" 
+        type="text/css" 
+        href="styles/comms.css"
+    >
+    <link 
+        rel="stylesheet" 
+        type="text/css" 
+        href="/styles/socialcolours.css"
+    >
+    <link 
+        rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
+        crossorigin="anonymous"
+    >
+    <link 
+        rel="icon" 
+        href="/favicon.png"
+    >
+    <meta 
+        name="description" 
+        content="BLANK WEBSITE"
+    >
+    <meta
+        name="keywords" 
+        content="statera, statera fukumoto, lykos, alopix, furry"
+    >
+    <meta 
+        property="og:image" 
+        content="https://staterafukumoto.github.io/img/webmaster.png"
+    >
+    <meta 
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152605137-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'UA-152605137-1');
+    </script>
+    <link 
+        href="https://fonts.googleapis.com/css?family=Lexend+Deca|Roboto&display=swap" 
+        rel="stylesheet"
+    >
+    <meta 
+        name="theme-color" 
+        content="#282c36"
+    >
+</head>
+<body>
+
+<div id="header">
+        <i id="hamborger" class="fas fa-bars" onclick="flipOut()"></i>
+        <center><img id="hlogo" draggable="false" src="../img/wordmark_white.png"></center>
+</div>
+
+<div id="leftwrapper">
+
+</div>
+<div id="shadow" onclick="flipIn()"></div>
+
+<!-- end of left wrapper -->
+
+<div id="rightwrapper">
+<center>
+<br>
+<div class="card">
+<span class="header"> commission status </span>
+<hr>
+
+<span class = "commdisplay">
+    <br>
+    <table style="width: 90%;" border="0">
+        <tbody>
+        <tr>
+        <td>pixel sprite icons</td>
+        <td class="tdStatus commsClosed" align="right">closed</td>
+        </tr>
+        <tr>
+        <td>pixel sprite stickers</td>
+        <td class="tdStatus commsClosed" align="right">closed</td>
+        </tr>
+        <tr>
+        <td>hand drawings</td>
+        <td class="tdStatus commsClosed" align="right">closed</td>
+        </tr>
+        <tr>
+        <td>wallpapers</td>
+        <td class="tdStatus commsClosed" align="right">closed</td>
+        </tr>
+        </tbody>
+    </table>
+    <br>
+</span>
+
+</div>
+
+<div class="card">
+<span class="header"> sticker estimate tool </span>
+<hr>
+<span class = "commdisplay">
+    <table style="width: 90%;" border="0">
+        <tbody>
+        <tr>
+            <td>expression stickers</td>
+            <td class="" align="right"><input class="stickertdbox" type="number" id="sticker-exp-quant" min="0" value="0"></td>
+        </tr>
+        <tr>
+            <td>body stickers</td>
+            <td class="" align="right"><input class="stickertdbox" type="number" id="sticker-bdm-quant" min="0" value="0"></td>
+        </tr>
+        <tr>
+            <td>cost per</td>
+            <td class="" align="right"><input class="stickertdbox" type="number" id="sticker-costper" min="1" value="1"></td>
+        </tr>
+        <tr>
+            <td>TOTAL</td>
+            <td class="#" align="right"> <span id="stickertotal" class="stickertdfield"> 0 </span></td>
+        </tr>
+        </tbody>
+    </table>
+</span>
+<br>
+<span class="linkbutton" onclick="calculateStickerCost()">calculate</span>
+</div>
+
+<div class="card">
+    <span class="header"> sticker types </span>
+    <hr>
+        <p class="cardpara">
+            <img src="img/expression.png" width="35%" draggable="false"><br>
+
+            <p class="stickertypetext">
+                this is an expression sticker. the factor here, is the facial expression with the body remaining
+                as normal.
+            </p>
+            <br>
+
+            <hr>
+            <img src="img/bodypose.png" width="35%" draggable="false"><br>
+            <p class="stickertypetext">
+                this is a body sticker, the facial expression and body pose have changed from the base. these cost
+                1.25 times the rate for expression stickers.
+            </p>
+            
+        </p>
+</div>
+
+<div class="card">
+    <span class="header"> heads up! </span>
+    <hr>
+        <p class="cardpara">
+            these aren't meant to be taken as absolute costs. if you have further questions
+            do reach out to me first! my contact information can be found at the side of the page.
+        </p>
+</div>
+
+
+</center>
+</div>
+
+<div id="cookieconsent"></div>
+
+<script src="scripts/comm_math.js"></script>
+
+<script src="/scripts/response.js"></script>
+<script src="/scripts/sidebar.js"></script>
+<script src="/scripts/waywork.js"></script>
+<script src="/scripts/theme_manager.js"></script>
+
+</body>

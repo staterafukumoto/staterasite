@@ -1,6 +1,7 @@
 *{
     --main-bg-colour: #0a0b0d;
-    --header-gradient: linear-gradient(to bottom, #191c21 0%,#101216 100%);
+    /* --header-gradient: linear-gradient(to bottom, #191c21C8 0%,#101216C8 100%); */
+    --header-gradient: #0a0b0d;
     --sidebar-colour: #0c0d0f;
     --card-colour: #0c0d0f;
 

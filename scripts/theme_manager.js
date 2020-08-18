@@ -36,9 +36,16 @@ function getTheme(){
 function checkTheme(){
     if (getTheme() == "light"){
         setLightTheme()
+        return "set to light"
     } else{
         setDarkTheme()
+        return "set to dark"
     }
 }
 
 checkTheme()
+
+// window.setInterval(function(){
+//     window.theme = getTheme()
+//     checkTheme()
+// })
