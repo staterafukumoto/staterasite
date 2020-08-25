@@ -34,7 +34,7 @@
     border: none;
     border-bottom: 1px solid var(--small-text-colour);
     width: 70%;
-    /* border-radius: 6px; */
+    border-radius: 0px;
     /* background: rgba(255,255,255,0.1); */
     color: var(--small-text-colour);
     text-align: center;

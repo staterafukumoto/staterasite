@@ -26,4 +26,7 @@
     --sb-track-colour: transparent;
     --sb-thumb-colour: #191c21;
     --sb-thumb-colour-hover: #2c313a;
+
+    --wp-label-colour: rgba(255,255,255,0.1);
+    --wp-resol-colour: rgba(255,255,255,0.05);
 }

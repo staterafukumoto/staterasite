@@ -43,9 +43,28 @@ function checkTheme(){
     }
 }
 
-checkTheme()
+// proof of concept changing with system thing
 
+// function changeWithSystem(){
+// 	if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+//         if (window.theme == "dark"){
+//             //
+//         } else{
+//             setDarkTheme()
+//         }
+// 	} else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches){
+//         if (window.theme == "light"){
+//             //
+//         } else{
+//             setLightTheme()
+//         }
+//     } else{
+//         setDarkTheme()
+//     }
+// }
+// changeWithSystem()
 // window.setInterval(function(){
-//     window.theme = getTheme()
-//     checkTheme()
-// })
+//     changeWithSystem()
+// },200)
+
+checkTheme()

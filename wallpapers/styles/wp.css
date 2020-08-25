@@ -14,16 +14,16 @@ body{
     background: var(--card-colour);
     display: inline-block;
     user-select: none;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 4px;
-    border: 1px solid #444;
+    border: 1px solid var(--standard-border-colour);
     transition: 0.2s transform ease,
                 0.2s border ease;
     z-index: 0;
-    border-radius: 8px;
+    border-radius: 12px;
 
 
 }
@@ -44,7 +44,7 @@ body{
     height: 180px;
     cursor: pointer;
     border: 1px solid #343538;
-    border-radius: 12px;
+    border-radius: 6px;
 }
 
 .cont_label{
@@ -53,7 +53,7 @@ body{
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     font-family: 'Lexend Deca', sans-serif;
     user-select: none;
-    background: rgba(255,255,255,0.1);
+    background: var(--wp-label-colour);
     font-size: 22px;
     padding-bottom: 3px;
 
@@ -71,7 +71,7 @@ body{
     user-select: none;
     /* font-style: italic; */
     font-size: 12px;
-    background: rgba(255,255,255,0.05);
+    background: var(--wp-resol-colour);
 
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
@@ -129,4 +129,9 @@ body{
 
 .clickwarn{
     color: var(--secondary-accent);
+}
+
+.disclaimer{
+    opacity: 0.6;
+    font-style: italic;
 }
