@@ -13,13 +13,19 @@
         href="/404.css"
     >
     <link 
+        id="themesection"
+        rel="stylesheet" 
+        type="text/css" 
+        href="/theme/dark.css"
+    >
+    <link 
         rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
         crossorigin="anonymous"
     >
     <link 
         rel="icon" 
-        href="//icon.ico"
+        href="/favicon.ico"
     >
     <meta 
         name="description" 
@@ -33,7 +39,7 @@
         property="og:image" 
         content="https://staterafukumoto.github.io/img/webmaster.png"
     >
-    <meta 
+    <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0"
     >
@@ -42,28 +48,35 @@
 
 <!-- for future use -->
 
-<div id="header">
-        <center><img id="hlogo" draggable="false" src="/img/wordmark_white.png"></center>
+<div id="fofh">
+    <center>
+        <img src="/img/wordmark_white.png" id="fofpic" draggable="false">
+    </center>
 </div>
 
-<div id="msg">
-    <br>
-    <span class="hed">404</span>
-    <br>
-    <br>
-    <span class="toe">i'm sorry dave, i'm afraid i can't find that</span>
-    <br><br><br>
-    <a href="/" class="buttonhome"> &larr; go home</a> 
-    &nbsp; 
-    <a href="https://www.netflix.com/watch/80073226?t=1462" class="buttonelse" target="_blank"> be sad about it &rarr;</a>
-    <br><br>
-    <!-- it's big brain time -->
-</div>
 
-<!-- <iframe src="http://corndog.io/" frameborder="0" id="bg"></iframe> -->
-<img src="https://picsum.photos/1600/900" id="bg" onload="ready(this.id)">
+<center>
+    <span id="title">there's nothing here</span>
+    <span id="subtitle"> i checked extra hard. why don't you try something else instead?</span>
+    <div id="sites">
+        <span class="sitesect siteC" onclick="goHome()"> home </span>
+        <span class="sitesect siteM" onclick="goComms()"> commissions </span>
+        <span class="sitesect siteY" onclick="goWp()"> wallpapers </span>
+        <span class="sitesect siteK" onclick="goPay()"> pay </span>
+        <span class="sitesect siteK" onclick="bruh()"> bruh </span>
+    </div>
+</center>
 
-<span id="credit"> background is provided by <a href="https://picsum.photos" target="_blank">lorem picsum</a> </span>
+<div id="border"></div>
+
+<img src="/img/404/4.gif" id="bg" onload="">
+
+
+<!-- <img src="https://picsum.photos/1600/900" id="bg" onload="ready(this.id)"> -->
+
+<!-- <span id="credit"> background is provided by <a href="https://picsum.photos" target="_blank">lorem picsum</a> </span> -->
 
 <script src="/404.js"></script>
+<script src="/404links.js"></script>
+
 </body>
