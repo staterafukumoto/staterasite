@@ -127,7 +127,9 @@ const phrases = [
     "batchry",
     "na no",
     "that's my wife!",
-    "*unreal sippage*"
+    "*unreal sippage*",
+    "you can't scare me with this",
+    "🕹️❒"
 ]
 
 async function load_home(){
@@ -151,7 +153,11 @@ function assignMarker(){
 }
 
 function pickSubtitle(){
+    // for debug
+    // var luckyone = phrases[phrases.length - 1]
+
     var luckyone = phrases[Math.floor(Math.random() * phrases.length)]
+
     document.getElementById("sidebarsubtitle").innerHTML = luckyone
 }
 
