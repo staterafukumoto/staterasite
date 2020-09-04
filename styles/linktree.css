@@ -1,0 +1,51 @@
+#linktree{
+    position: absolute;
+    background: var(--main-bg-colour);
+
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 56px;
+
+    /* z-index: 200; */
+}
+
+#leftwrapper{
+    display: none !important;
+}
+
+#header{
+    width: 100% !important;
+    left: 0px !important;
+    z-index: 210;
+}
+
+#hamborger{
+    display: none !important;
+}
+
+#linktreeContainer{
+    background: var(--sidebar-colour);
+    /* width: 400px; */
+
+    position: absolute;
+    display: inline-block;
+    
+    left: calc(50% - 200px);
+    right: calc(50% - 200px);
+    bottom: 0px;
+    top: 0px;
+
+    z-index: 200;
+
+    border-left: 1px solid var(--standard-border-colour);
+    border-right: 1px solid var(--standard-border-colour);
+}
+
+.ltcwholewidth{
+    left: 0px !important;
+    right: 0px !important; 
+
+    border-left: 0px solid var(--standard-border-colour) !important;
+    border-right: 0px solid var(--standard-border-colour) !important;
+}
