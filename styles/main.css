@@ -292,12 +292,13 @@ a{
     font-family: 'Lexend Deca', sans-serif;
     user-select: none;
     display: block;
-    /* padding-top: 2px;
-    padding-bottom: 2px; */
     transition: 0.2s padding-left ease, 0.2s background ease, 0.2s opacity ease;
     color: var(--some-text-colour);
     font-weight: 100;
     cursor: pointer;
+
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
 
 .somelink:hover{
