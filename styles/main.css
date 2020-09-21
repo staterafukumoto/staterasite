@@ -59,11 +59,13 @@ body{
     position: absolute;
     line-height: 56px;
     padding-left: 24px;
+    padding-right: 24px;
     font-size: 32px;
-    color: var(--text-colour);
+    color: var(--primary-accent);
     z-index: 30;
-    opacity: 0.6;
-    transition: 0.2s opacity ease;
+    opacity: 1;
+    transition: 0.2s opacity ease, 0.2s color ease, 0.2s transform ease;
+    transform: scale(1);
 }
 
 #hamborger:hover{
@@ -72,6 +74,11 @@ body{
 
 #hamborger:active{
     opacity: 1;
+}
+
+.hmgOUT{
+    color: var(--secondary-accent) !important;
+    transform: scaleX(1.5) !important;
 }
 
 #hlogo{
@@ -92,11 +99,30 @@ body{
     background: var(--sidebar-colour);
     z-index: 50;
     border-right: 1px solid var(--standard-border-colour);
+
+    /* text-align: center; */
 }
 
 .sidebarDispMobile{
     top: 56px !important;
     border: none !important;
+
+    /* animation-name: mobilesidebarslidein;
+    animation-duration: 250ms;
+    animation-timing-function: ease-in-out;
+    animation-play-state: initial; */
+}
+
+@keyframes mobilesidebarslidein {
+    from {
+        bottom: 100%;
+        height: 100%;
+    }
+
+    to {
+        bottom: 0%;
+        height: 100%;
+    }
 }
 
 .sidebarDispDesktop{
@@ -258,27 +284,36 @@ body{
     left: 0px;
     width: 100%;
     height: 128px;
-    background: linear-gradient(to bottom, transparent, var(--sidebar-colour));
+    background: linear-gradient(to bottom, transparent, transparent, var(--sidebar-colour));
 }
 
 .someheader{
     color: var(--some-header-colour);
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, ubuntu, sans-serif; */
     font-family: 'Lexend Deca', sans-serif;
     user-select: none;
-    padding-left: 12px;
-    margin-top: 8px;
     font-size: 22px;
     font-weight: 900;
     display: block;
     left: 0px;
     right: 0px;
-    /* background: linear-gradient(to right,transparent,rgba(0,0,0,0.2),transparent); */
-    /* background: rgba(0,0,0,0.1); */
-    /* background: rgba(255,255,255,0.02); */
-    border-top: 2px var(--standard-border-colour) solid;
-    margin-bottom: 5px;
-    /* border-top-right-radius: 32px; */
+
+    padding-left: 16px;
+    /* margin-top: 8px; */
+    /* margin-bottom: 8px; */
+
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+    /* border-top: 2px var(--standard-border-colour) solid; */
+    /* background: rgba(127,127,127,0.1); */
+
+    border-left: 6px solid var(--standard-border-colour);
+    border-bottom: 2px solid var(--standard-border-colour);
+
+    user-select: none; /*everyone else */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    cursor: default;
 }
 
 a{
@@ -288,7 +323,6 @@ a{
 .somelink{
     padding-left: 16px;
     font-size: 18px;
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, ubuntu, sans-serif; */
     font-family: 'Lexend Deca', sans-serif;
     user-select: none;
     display: block;
@@ -297,12 +331,13 @@ a{
     font-weight: 100;
     cursor: pointer;
 
-    padding-top: 1px;
-    padding-bottom: 1px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border-left: 6px solid var(--standard-border-colour);
 }
 
 .somelink:hover{
-    padding-left: 22px;
+    padding-left: 26px;
     background: var(--some-hover-bg);
 
 }

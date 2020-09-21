@@ -79,12 +79,14 @@ window.addEventListener('resize', checkWidth)
 function flipOut(){
     document.getElementById("leftwrapper").style.display = "block"
     document.getElementById("shadow").style.display = "block"
+    document.getElementById("hamborger").classList.add("hmgOUT")
     document.getElementById("hamborger").onclick = flipIn
 }
 
 function flipIn(){
     document.getElementById("leftwrapper").style.display = "none"
     document.getElementById("shadow").style.display = "none"
+    document.getElementById("hamborger").classList.remove("hmgOUT")
     document.getElementById("hamborger").onclick = flipOut
 }
 
