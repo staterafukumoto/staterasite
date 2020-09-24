@@ -78,6 +78,8 @@
 </div>
 
 <div id="leftwrapper">
+<div class="headerPadding"></div>
+
 
 </div>
 <div id="shadow" onclick="flipIn()"></div>

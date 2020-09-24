@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>the stat chat - statera fukumoto</title>
+    <title>blog - statera fukumoto</title>
 
-    <meta property="og:title" content="the stat chat - statera fukumoto">
-    <meta name="twitter:title" content="the stat chat - statera fukumoto">
+    <meta property="og:title" content="blog - statera fukumoto">
+    <meta name="twitter:title" content="blog - statera fukumoto">
 
-    <meta property="og:description" content="a group chat by furries, for furries (who have common decency)">
-    <meta name="twitter:description" content="a group chat by furries, for furries (who have common decency)">
-    <meta name="description" content="a group chat by furries, for furries (who have common decency)">
+    <meta property="og:description" content="this is a blog, and is where i write things. i will complain about everything from tech to memes">
+    <meta name="twitter:description" content="this is a blog, and is where i write things. i will complain about everything from tech to memes">
+    <meta name="description" content="this is a blog, and is where i write things. i will complain about everything from tech to memes">
     
     <meta property="og:image" content="https://stateralikesguys.com/img/webmaster.png">
     <meta name="twitter:image" content="https://stateralikesguys.com/img/webmaster.png">
@@ -21,17 +21,12 @@
     <link 
         rel="stylesheet" 
         type="text/css" 
-        href="styles/chat.css"
-    >
-    <link 
-        rel="stylesheet" 
-        type="text/css" 
-        href="/styles/right.css"
-    >
-    <link 
-        rel="stylesheet" 
-        type="text/css" 
         href="/styles/main.css"
+    >
+    <link 
+        rel="stylesheet" 
+        type="text/css" 
+        href="blog.css"
     >
     <link 
         id="themesection"
@@ -42,7 +37,12 @@
     <link 
         rel="stylesheet" 
         type="text/css" 
-        href="../styles/socialcolours.css"
+        href="/styles/right.css"
+    >
+    <link 
+        rel="stylesheet" 
+        type="text/css" 
+        href="/styles/socialcolours.css"
     >
     <link 
         rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
@@ -79,74 +79,30 @@
 
 <div id="header">
         <i id="hamborger" class="fas fa-bars" onclick="flipOut()"></i>
-        <center><img id="hlogo" draggable="false" src=""></center>
+        <center><img id="hlogo" draggable="false" src="../img/wordmark_white.png"></center>
 </div>
 
 <div id="leftwrapper">
+
 
 </div>
 <div id="shadow" onclick="flipIn()"></div>
 
 <!-- end of left wrapper -->
-<div id="cookieconsent"></div>
 
 <div id="rightwrapper">
     <div class="headerPadding"></div>
-
-<div id="banner">
-    <br>
+    <iframe src="https://stateralikesblogs.tumblr.com" id="blogcontent" width="100%" height="100%" frameborder="0"></iframe>
     
-    <!-- <center> </center> -->
-
-    <center>
-        <table>
-            <tr>
-              <th><img src="imgs/logo-clear.png" draggable="false" id="chathero"></th>
-              <th><span id="bheader">the stat chat</span></th>
-            </tr>
-        </table>
-    </center>
-    <br>
-    <span id="bparagraph">
-        <center>
-            a group chat by furries, for furries (who have common decency). view the rules below and feel free to stop by
-        </center>
-    </span>
-</div>
-<br>
-
-<object data="rules.htm" id="rules">
-    oh fuck your browser is too crap to embed this document. <br>
-    consider getting updating your shit, or just clicking "enlarge rules"
-</object> 
-<br>
-<center> 
-    <span class="btn btn-enlarge" onclick="enlargeRules()"><i class="fas fa-expand"></i> &nbsp; enlarge </i></span> 
-    <span class="btn btn-join" onclick="joinGroup()"> join on telegram &nbsp; <i class="fab fa-telegram-plane"></i></span>
-
-</center>
-
-<br>
-
-<div id="didntwork">
-
-    <span class="dwtext"> if telegram didn't open, <u class="dwlink" onclick="openWeb()">click here</u></span>
-
-    <span class="dwclose" onclick="closeDiag()">
-        <i class="fas fa-times"></i>
-    </span>
 
 </div>
 
+<div id="cookieconsent"></div>
 
-<script src="rules.js"></script>
 <script src="/scripts/response.js"></script>
 <script src="/scripts/sidebar.js"></script>
 <script src="/scripts/waywork.js"></script>
 
 <script src="/scripts/theme_manager.js"></script>
-
-
-
 
 </body>
