@@ -154,6 +154,27 @@ body{
     filter: invert(var(--invert-state));
 }
 
+#rules::-webkit-scrollbar {
+    width: 10px;
+    transition: 0.2s background ease;
+}
+
+#rules::-webkit-scrollbar-track {
+  background: var(--main-bg-colour); 
+}
+
+#rules::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-colour);
+/* 
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px; */
+}
+
+#rules::-webkit-scrollbar-thumb:hover {
+  background: var(--sb-thumb-colour-hover); 
+}
+
+
 .btn{
     display: inline-block;
     border-radius: 24px;

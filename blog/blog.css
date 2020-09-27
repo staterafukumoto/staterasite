@@ -4,4 +4,25 @@
     right: 0; 
     bottom: 0; 
     top: 0px; 
+    background-color: var(--main-bg-colour);
+}
+
+#blogcontent::-webkit-scrollbar {
+    width: 10px;
+    transition: 0.2s background ease;
+}
+
+#blogcontent::-webkit-scrollbar-track {
+  background: var(--main-bg-colour); 
+}
+
+#blogcontent::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-colour);
+/* 
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px; */
+}
+
+#blogcontent::-webkit-scrollbar-thumb:hover {
+  background: var(--sb-thumb-colour-hover); 
 }
