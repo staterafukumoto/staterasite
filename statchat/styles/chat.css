@@ -165,9 +165,6 @@ body{
 
 #rules::-webkit-scrollbar-thumb {
   background: var(--sb-thumb-colour);
-/* 
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px; */
 }
 
 #rules::-webkit-scrollbar-thumb:hover {
