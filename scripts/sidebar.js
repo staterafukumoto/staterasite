@@ -129,7 +129,9 @@ const phrases = [
     "that's my wife!",
     "*unreal sippage*",
     "you can't scare me with this",
-    "🕹️❒"
+    "🕹️❒",
+    "trans rights!",
+    "leave britney alone"
 ]
 
 async function load_home(){

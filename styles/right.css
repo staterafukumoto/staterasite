@@ -29,8 +29,10 @@
 
     transition: 0.2s clip-path ease;
 
-    border-radius: 12px;
+    border-radius: 16px;
     border: 1px solid var(--standard-border-colour);
+
+    z-index: 20;
 
 
 }
@@ -65,6 +67,8 @@ hr{
 .cardpara{
     margin-left: 20px;
     margin-right: 20px;
+
+    text-align: left;
 }
 
 .header{
