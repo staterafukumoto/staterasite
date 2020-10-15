@@ -460,12 +460,15 @@ a{
 .linkbutton{
     display: inline-block;
     border-radius: 24px;
+    
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
 
     margin-bottom: 5px;
+
+
     font-family: 'Lexend Deca', sans-serif !important;
     color: var(--text-colour);
     
@@ -475,6 +478,7 @@ a{
     transition: 0.2s filter ease;
     border: 2px solid var(--primary-accent);
     transition: 0.2s filter ease;
+    text-align: center;
 }
 
 .linkbutton:hover{
@@ -653,6 +657,8 @@ a{
     color: white;
     font-family: "Lexend Deca",sans-serif;
     text-align: center;
+
+    /* text-shadow: 0px 10px 4px black; */
 
     user-select: none; /*everyone else */
     -webkit-touch-callout: none; /* iOS Safari */
