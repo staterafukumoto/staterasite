@@ -21,7 +21,6 @@
     display: block;
     background: var(--card-colour);
     color: var(--text-colour);
-    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, ubuntu, sans-serif; */
     font-family: 'Lexend Deca', sans-serif;
 
     /* i have been fucking with this for about two days now, and i really just want to cry */
@@ -33,8 +32,21 @@
     border: 1px solid var(--standard-border-colour);
 
     z-index: 20;
+}
 
+.vcard{
+    /* opacity: 0.7; */
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
 
+.vheader{
+    font-size: 24px;
+    user-select: none;
+    display: inline-block;
+    margin-bottom: 0px !important;
+    margin-left: 12px;
+    margin-right: 12px;
 }
 
 hr{
@@ -43,25 +55,6 @@ hr{
     border: 0; 
     padding: 0;
     border-top: 1px solid var(--standard-border-colour);
-}
-
-#countdowndisplay{
-    color: var(--text-colour);
-    background: black;
-    font-size: 32px;
-    font-family: monospace;
-    user-select: none;
-
-    cursor: default;
-    display: inline-block;
-
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-    /* border: 1px solid white; */
-    clip-path: polygon(15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 15px);
 }
 
 .cardpara{

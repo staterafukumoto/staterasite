@@ -1,4 +1,4 @@
-var countDownDate = new Date("Jul 23, 2019 15:33:00").getTime();
+var countDownDate = new Date("Oct 31, 2020 16:00:00").getTime();
 
 function countdown(){
     // get today's date and time
@@ -22,9 +22,18 @@ function countdown(){
 
 
     //output to #countdowndisplay element
-    document.getElementById("countdowndisplay").innerHTML = days + "d " + hours + "h "
+    document.getElementById("hlwncounter").innerHTML = days + "d " + hours + "h "
     + minutes + "m " + seconds + "s ";
 }
 
-// window.setInterval(countdown,1000)
-// countdown() //run on page load
+window.setInterval(countdown,1000)
+countdown() //run on page load
+
+// //halloween countdown code
+// var lengthofday = 1000 * 60 * 60 * 24 
+// var present_date = new Date()
+// var halloween = new Date(present_date.getFullYear(), 9, 31) 
+// var math = Math.round(halloween.getTime() - present_date.getTime()) / (lengthofday)
+// var finalresult = math.toFixed(0)
+
+// document.getElementById("hlwncounter").innerHTML = finalresult

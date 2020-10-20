@@ -1,12 +1,3 @@
-//halloween countdown code
-var lengthofday = 1000 * 60 * 60 * 24 
-var present_date = new Date()
-var halloween = new Date(present_date.getFullYear(), 9, 31) 
-var math = Math.round(halloween.getTime() - present_date.getTime()) / (lengthofday)
-var finalresult = math.toFixed(0)
-
-document.getElementById("hlwncounter").innerHTML = finalresult
-
 function adjustBanner(){
     //higher the number, the slower it scrolls, and choppier it looks
     // CANNOT BE GREATER THAN 10
@@ -44,3 +35,7 @@ window.setTimeout(adjustBanner,8)
 
 
 // document.getElementById("mainsitebanner").style.top
+
+function bannerOnLoad(id){
+    document.getElementById(id).classList.add("msb-img-loaded")
+}
