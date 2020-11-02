@@ -1,11 +1,12 @@
 *{
-    --main-bg-colour: #050505;
+    --main-bg-colour: #0a0b0d;
     /* --header-gradient: linear-gradient(to bottom, #191c21C8 0%,#101216C8 100%); */
-    --header-gradient: #050505c8;
-    --sidebar-colour: #050505;
-    --card-colour: #111;
+    /* --header-gradient: #101216C8; */
+    --header-gradient: #0a0b0dC8;
+    --sidebar-colour: #0c0d0f;
+    --card-colour: #0c0d0f;
 
-    --primary-accent: #ff7b00;
+    --primary-accent: #009cde;
     --secondary-accent: #faaf3a;
 
     --text-colour: #e0e0e0;
@@ -18,14 +19,14 @@
     --comm-sidebar-colour: #00000064;
     --modal-bg: #212121;
 
-    --msg-box-gradient: linear-gradient(to top, #b35600,#ff7b00);
+    --msg-box-gradient: linear-gradient(to top, #0053b0,#0078fe);
     --msg-box-text-color: white;
 
-    --invert-state: 0.1;
+    --invert-state: 0;
     
     --sb-track-colour: transparent;
-    --sb-thumb-colour: #db6a00;
-    --sb-thumb-colour-hover: #db6a00;
+    --sb-thumb-colour: #191c21;
+    --sb-thumb-colour-hover: #2c313a;
 
     --wp-label-colour: rgba(255,255,255,0.1);
     --wp-resol-colour: rgba(255,255,255,0.05);

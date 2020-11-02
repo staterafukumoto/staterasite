@@ -80,9 +80,8 @@ const phrases = [
     "kilometres edgeworth!",
     "y'all got any baked beans?",
     "probably a simp",
-    "mom, grill me about the newest llvm compiler",
     "origami mommy",
-    "this tastes different, did you put anything different in here?",
+    "this tastes different, did you put anything different in it?",
     "smooth criminal!",
     "outside studio door detected motion",
     "fldsmdfr",
@@ -131,7 +130,18 @@ const phrases = [
     "you can't scare me with this",
     "🕹️❒",
     "trans rights!",
-    "leave britney alone"
+    "leave britney alone",
+    "i live by two words: <br> 'fuck you', 'pay me'",
+    "keep your love lockdown.",
+    "captain two phones",
+    "delet this",
+    "a new thing to unpack!",
+    "sap nap!",
+    "staterawastaken",
+    "<span style='font-family: monospace'> i   s e e   y o u </span>",
+    "colourful!",
+    "20 goto 10",
+    "absolutely disgusting!"
 ]
 
 async function load_home(){
@@ -156,9 +166,9 @@ function assignMarker(){
 
 function pickSubtitle(){
     // for debug
-    // var luckyone = phrases[phrases.length - 1]
+    var luckyone = phrases[phrases.length - 1]
 
-    var luckyone = phrases[Math.floor(Math.random() * phrases.length)]
+    // var luckyone = phrases[Math.floor(Math.random() * phrases.length)]
 
     document.getElementById("sidebarsubtitle").innerHTML = luckyone
 }
