@@ -309,7 +309,6 @@ body{
     font-family: 'Lexend Deca', sans-serif;
     user-select: none;
     font-size: 22px;
-    font-weight: 900;
     display: block;
     left: 0px;
     right: 0px;
@@ -684,9 +683,13 @@ a{
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
     cursor: default;
+}
 
-    /* font-family: 'Cedarville Cursive', cursive; */
-    /* font-family: 'Gochi Hand', cursive; */
+.nonselectlink{
+    user-select: none; /*everyone else */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    cursor: pointer;
 }
 
 #bannerPadding{

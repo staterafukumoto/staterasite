@@ -166,9 +166,9 @@ function assignMarker(){
 
 function pickSubtitle(){
     // for debug
-    var luckyone = phrases[phrases.length - 1]
+    // var luckyone = phrases[phrases.length - 1]
 
-    // var luckyone = phrases[Math.floor(Math.random() * phrases.length)]
+    var luckyone = phrases[Math.floor(Math.random() * phrases.length)]
 
     document.getElementById("sidebarsubtitle").innerHTML = luckyone
 }

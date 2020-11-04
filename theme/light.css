@@ -1,9 +1,10 @@
 *{
     --main-bg-colour: #ededed;
-    /* --header-gradient: linear-gradient(to bottom, #ffffffc8 0%,#d4d4d4c8 100%); */
     --header-gradient: #ffffffc8;
     --sidebar-colour: white;
     --card-colour: white;
+
+    --wp-site-bg: #ededed;
 
     --primary-accent: #0078fe;
     --secondary-accent: #aa6900;
