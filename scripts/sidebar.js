@@ -3,7 +3,6 @@ const cookieconsent = document.getElementById("cookieconsent")
 const phrases = [
     "up all night to get lucky!",
     "uses dark mode",
-    "canonically taller than batman",
     "are we gonna have a problem?",
     "put hotdog in mouth s o f t l y",
     "egg, extra egg",
@@ -141,7 +140,14 @@ const phrases = [
     "<span style='font-family: monospace'> i   s e e   y o u </span>",
     "colourful!",
     "20 goto 10",
-    "absolutely disgusting!"
+    "absolutely disgusting!",
+    "and my axe!",
+    "and my ass!",
+    "i won award 42",
+    "the demon barber on feet street.",
+    "woah here she comes",
+    "it all began with a smile",
+    "scared and horny."
 ]
 
 async function load_home(){

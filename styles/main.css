@@ -44,8 +44,10 @@ body{
 
     background: var(--header-gradient);
     border-bottom: 1px solid var(--standard-border-colour);
-    -webkit-backdrop-filter: saturate(200%) blur(20px);
+    
+    /* why does this work like crap */
     backdrop-filter: saturate(200%) blur(20px);
+    -webkit-backdrop-filter: saturate(200%) blur(20px);
 
     user-select: none; /*everyone else */
     -webkit-touch-callout: none; /* iOS Safari */

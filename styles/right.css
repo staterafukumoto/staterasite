@@ -92,3 +92,36 @@ hr{
 .darkbg{
     background: black !important;
 }
+
+.tagtext{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    
+    white-space: nowrap;
+    display: inline-block;
+    
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+
+    background-color: var(--standard-border-colour);
+    border-radius: 999px;
+
+    user-select: none; /*everyone else */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    cursor: default;
+}
+
+.tagsinformer{
+    display: block;
+    margin-bottom: 4px;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 18px;
+
+    opacity: 0.7;
+}
