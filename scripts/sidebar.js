@@ -147,7 +147,17 @@ const phrases = [
     "the demon barber on feet street.",
     "woah here she comes",
     "it all began with a smile",
-    "scared and horny."
+    "scared and horny.",
+    "gimme love",
+    "joji spoon",
+    "i have presidential aids",
+    "my name jeff",
+    "cucumber joe",
+    "quality is (not) our recipe!",
+    "hollywoo!",
+    "hello gor- look gordon, ropes!",
+    "that's what the werewolves wan't you to think",
+    "didn't my tiger eat your ass?"
 ]
 
 async function load_home(){

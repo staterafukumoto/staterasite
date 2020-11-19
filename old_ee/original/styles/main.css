@@ -1,0 +1,340 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Mozilla based browsers */
+::-moz-selection {
+       background-color: #00c3fc;
+       color: white;
+}
+
+/* Works in Safari */
+::selection {
+       background-color: #00c3fc;
+       color: black;
+}
+
+
+#header
+{
+	padding: 0px 0px 0px 0px;
+	margin: 0px;
+	border-spacing: ;
+	background-color: #ededed;
+	position: sticky;
+	width: 100%;
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px); 
+
+}
+
+/*do not change*/
+#header img:hover
+{
+  animation-name: pulse_animation;
+  animation-duration: 666ms;
+  transform-origin: 50% 50%;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+#menubar
+{
+  position: sticky;
+  position: -webkit-sticky;
+  top:0px;
+  width: 100vw;
+  /*box-shadow: 0px 2px 4px black;*/
+  z-index: 2;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #30303099;
+    font-family:-apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Ubuntu;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);  
+    width: 100vw;
+    text-align: center;
+
+}
+
+li {
+    display: inline-block;
+    text-align: center;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+/*    text-shadow: 0px 2px 2px black;*/
+} 
+
+li a:hover {
+  color: black;
+  background-color: white;
+  animation-name: textgrow;
+  animation-duration: 150ms;
+  transform-origin:50% 50%;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  -webkit-timing-function: linear;
+  -webkit-iteration-count:1;
+}
+
+h1
+{
+  font-family:-apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Ubuntu;
+	font-size: 64px;
+	color: black;
+  font-weight: normal;
+}
+
+h2
+{
+  font-family:-apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Ubuntu;
+	font-size: 54px;
+	font-weight: bolder;
+}
+
+h3
+{
+  font-family:-apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Ubuntu;
+	font-size: 14px;
+	font-weight: lighter;
+}
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-style: inset;
+    border-width: 1px;
+} 
+
+p
+{
+	font-family:-apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Ubuntu;
+	font-weight: regular;
+	width:65%;
+  color: black;
+}
+
+#landtext
+{
+  font-family: Helvetica Neue, Helvetica, Ubuntu;
+}
+
+
+.pulse {
+  animation-name: pulse_animation;
+  animation-duration: 750ms;
+  transform-origin:70% 70%;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes pulse_animation {
+  0% { transform: scale(1); }
+  30% { transform: scale(1); }
+  40% { transform: scale(1.08); }
+  50% { transform: scale(1); }
+  60% { transform: scale(1); }
+  70% { transform: scale(1.05); }
+  80% { transform: scale(1); }
+  100% { transform: scale(1); }
+}
+
+.grow {
+  animation-name: textgrow;
+  animation-duration: 750ms;
+  transform-origin:70% 70%;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+
+@keyframes textgrow 
+{
+  0% { transform: scale(1); }
+  50% { transform: scale(1.10); }
+  100% { transform: scale(1); }
+}
+
+#a
+{
+	text-decoration: underline;
+	color: #00aeef;
+}
+
+.product
+{
+	width:50%;
+	max-width: 768px;
+}
+
+#smol img
+{
+  height: 12px;
+  position: inline;
+  z-index: 2;
+}
+
+#end
+{
+  background-color: #232323;
+  position: absolute;
+  width: 100%;
+  height: 128px;
+  box-shadow: inset 0 0 5px #000000;
+}
+
+#end span
+{
+  font-family: Helvetica Neue, Helvetica, Ubuntu;
+  text-align: right;
+  position: absolute;
+  right: 15%;
+}
+
+
+#socmed
+{
+  position:absolute;
+  left: 15%;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #00c3fc;
+    color: white;
+}
+
+/* Add a hover effect*/
+.fa:hover {
+background-color: #00a4d6;
+transition: all 0.2s ease;
+}
+
+iframe
+{
+  width: 60%;
+  height: 768px;
+  border-radius: 16px;
+  box-shadow: 0px 2px 4px grey;
+}
+
+.button 
+{
+    background-color: #00c3fc; 
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family:-apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Ubuntu;
+    box-shadow: 0px 2px 4px grey;
+    border-radius: 34px;
+}
+
+
+.button:hover {
+  box-shadow: 0px 6px 8px grey;
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}
+
+.plist 
+{
+    box-shadow: 0px 2px 12px #7a7a7a;
+    cursor:pointer;
+}
+
+.plist:hover
+{
+    box-shadow: 0px 4px 25px #515151;
+    transform: scale(1.15);
+    transition: all 0.4s ease;
+}
+
+
+#tweets
+{
+  width: 65%;
+  max-width: 1200px;
+}
+
+#commstext
+{
+  color: red;
+  background-color: black;
+  padding-top: 2px;
+  padding-right: 8px;
+  padding-bottom: 2px;
+  padding-left: 8px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
+  box-shadow: 0px 2px 4px grey;
+  border-radius: 12px;
+}
+
+.noselect {
+  -webkit-touch-callout: none; 
+  -webkit-user-select: none;   
+  -khtml-user-select: none;    
+  -moz-user-select: none;      
+  -ms-user-select: none;      
+  user-select: none;
+}
+
+.divider
+{
+    width:5px;
+    height:auto;
+    display:inline-block;
+}
+
+@keyframes greyscale-fade-in {
+    0%   { -webkit-filter: grayscale(100%);
+            filter: grayscale(100%); }
+    100% { -webkit-filter: grayscale(0%);
+            filter: grayscale(0%); }
+}
+
+.gsanim {
+    animation: greyscale-fade-in 2s ease-in forwards;
+}
+
+@keyframes blur-fade-in {
+    0%   { -webkit-filter: blur(100%);
+            filter: blur(100%); }
+    100% { -webkit-filter: blur(0%);
+            filter: blur(0%); }
+}
+
+.banim {
+    animation: blur-fade-in 5s ease-in forwards;
+}
+
+#himg
+{
+  z-index: -1;
+}
