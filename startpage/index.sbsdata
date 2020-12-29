@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>statera's start apge</title>
+
+    <meta property="og:title" content="BLANK PAGE - statera fukumoto">
+    <meta name="twitter:title" content="statera fukumoto">
+
+    <meta property="og:description" content="A BLANK PAGE DO NOT FORGET TO CHANGE">
+    <meta name="twitter:description" content="A BLANK PAGE DO NOT FORGET TO CHANGE">
+    <meta name="description" content="A BLANK PAGE DO NOT FORGET TO CHANGE">
+    
+    <meta property="og:image" content="https://stateralikesguys.com/img/webmaster.png">
+    <meta name="twitter:image" content="https://stateralikesguys.com/img/webmaster.png">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <meta name="keywords" content="statera, statera fukumoto, lykos, alopix, furry">
+
+
+    <link 
+        rel="stylesheet" 
+        type="text/css" 
+        href="/styles/main.css"
+    >
+    <link 
+        id="themesection"
+        rel="stylesheet" 
+        type="text/css" 
+        href="/theme/dark.css"
+    >
+    <link 
+        rel="stylesheet" 
+        type="text/css" 
+        href="/styles/right.css"
+    >
+    <link 
+        rel="stylesheet" 
+        type="text/css" 
+        href="/styles/socialcolours.css"
+    >
+    <link 
+        rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
+        crossorigin="anonymous"
+    >
+    <link 
+        rel="icon" 
+        href="/favicon.png"
+    >
+    <meta 
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-152605137-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        
+        gtag('config', 'UA-152605137-1');
+    </script>
+    <link 
+        href="https://fonts.googleapis.com/css?family=Lexend+Deca|Roboto&display=swap" 
+        rel="stylesheet"
+    >
+    <link 
+        href="/styles/startpage.css" 
+        rel="stylesheet"
+    >
+    <meta 
+        name="theme-color" 
+        content="#282c36"
+    >
+</head>
+<body>
+
+<img src="/img/wordmark_white.png" id="branding">
+
+<div id="searchbarcontainer">
+    <input type="text" id="searchbar" placeholder="what would you like to do?">
+    <span id="gobutton"> <i class="fas fa-arrow-right fa-fw"></i> </span>
+</div>
+
+<div id="clock">
+    21:49
+</div>
+
+<img src="/wallpapers/imgs/full/magnitude.jpg" id="bg" onload="">
+
+<script src="/scripts/startpagemain.js"></script>
+<script src="/scripts/startpageclo.js"></script>
+</body>

@@ -410,7 +410,7 @@ a{
 #notification{
     position: absolute;
 
-    color: var(--text-colour);
+    color: white;
     font-size: 22px;
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, ubuntu, sans-serif; */
     font-family: 'Lexend Deca', sans-serif;
@@ -431,8 +431,8 @@ a{
     line-height: 64px;
 
     /* border: 1px solid white; */
-    border-left: 10px solid var(--primary-accent);
-    border-right: 10px solid var(--primary-accent);
+    border-left: 10px solid var(--secondary-accent);
+    border-right: 10px solid var(--secondary-accent);
     border-radius: 12px;
 
 
@@ -731,3 +731,29 @@ a{
     cursor: default;
 }
 
+.macbanner{
+    height: auto;
+    width: 40%;
+    min-width: 250px;
+    max-width: 440px;
+
+    margin-top: 40px;
+    /* pointer-events: none; */
+
+    /* border: 2px solid var(--text-colour); */
+
+    border-radius: 8px;
+
+    filter: invert(var(--invert-state));
+}
+
+.copyright{
+    color: var(--text-colour);
+    font-family: 'Lexend Deca', sans-serif;
+    opacity: 0.7;
+
+    display: block;
+
+    margin-top: 40px;
+
+}

@@ -1,8 +1,10 @@
 async function loadLinksBruh(){
+    //i don't remember why i named this function loadLinksBruh()
     var content = document.getElementById("linktreeContainer")
     content.innerHTML = await (await fetch('/sidebar.html')).text();
     document.getElementById("sitesettings").style.display="none"
     document.getElementById("linkslink").style.display="none"
+    document.getElementById("sitesheader").innerHTML = "website links:"
 }
 
 
@@ -19,15 +21,29 @@ function checkltcwidth(){
     if (mobilecheck() == true){
         var lift = document.getElementById("linktreeContainer")
         lift.classList = "ltcwholewidth" 
+        document.getElementById("header").style.display="block"
     } else if(width < 650){
         var lift = document.getElementById("linktreeContainer")
         lift.classList = "ltcwholewidth"
+        document.getElementById("header").style.display="block"
     } else{
         var lift = document.getElementById("linktreeContainer")
         lift.classList = ""
+        document.getElementById("header").style.display="none"
     }
 }
 
+function onSplashLoad(){
+    document.getElementById("bgimage").classList = "bgimageloaded"
+}
+
+//for some reason it bugs if run only once.
+checkltcwidth()
 checkltcwidth()
 window.addEventListener('resize', checkltcwidth)
 loadLinksBruh()
+
+window.addEventListener("load",function(){
+    var wprandom = wallpapers[Math.floor(Math.random() * wallpapers.length)][1]
+    document.getElementById("bgimage").src = "/wallpapers/imgs/thumbs/" + wprandom
+})

@@ -1,0 +1,150 @@
+body{
+    background: black;
+    overflow: hidden;
+}
+
+*{
+    font-family: 'Lexend Deca', sans-serif !important;
+    font-style: normal;
+    
+    user-select: none; /*everyone else */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+
+}
+
+#bg{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: -1;
+    height: 100%;
+    opacity: 0;
+    filter: blur(15px);
+    object-fit: cover;
+    transform: scale(1.8);
+
+    transition: 0.8s opacity ease, 0.8s transform ease;
+}
+
+.bgloaded{
+    opacity: 0.6 !important;
+    transform: scale(1.1) !important;
+}
+
+#title{
+    font-family: 'Lexend Deca', sans-serif !important;
+    display: block;
+    color: white;
+    font-size: 10vh;
+    margin-top: 72px;
+
+    user-select: none; /*everyone else */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+
+    cursor: default;
+    pointer-events: none;
+
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#subtitle{
+    font-family: 'Lexend Deca', sans-serif !important;
+    display: block;
+    color: white;
+    font-size: 24px;
+
+    user-select: none; /*everyone else */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+
+    cursor: default;
+    pointer-events: none;
+    opacity: 0.6;
+
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#border{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 0px;
+    z-index: 100;
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+    border: 16px solid rgba(255,255,255,0.5);
+    pointer-events: none;
+}
+
+#sites{
+    padding-top: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+
+    pointer-events: auto !important;
+
+    z-index: 125;
+
+}
+
+.sitesect{
+    display: inline-block;
+    font-family: 'Lexend Deca', sans-serif !important;
+
+    color: white;
+    border: 2px solid white;
+
+    border-radius: 999px;
+
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-bottom: 10px;
+    
+    cursor: pointer;
+}
+
+#fofh{
+    position: absolute;
+    left: 32px;
+    right: 32px;
+    top: 16px;
+    height: 48px;
+
+    z-index: 110;
+    
+    background: transparent;
+    border-bottom: 1px solid white;
+}
+
+#fofpic{
+    height: 32px;
+    padding-top: 8px;
+    padding-left: 8px;
+
+    pointer-events: none;
+}
+
+#bruh{
+    /* background: rgba(0,0,0,0.5); */
+    margin-left: 16px;
+    margin-right: 16px;
+}

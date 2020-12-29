@@ -157,7 +157,9 @@ const phrases = [
     "hollywoo!",
     "hello gor- look gordon, ropes!",
     "that's what the werewolves wan't you to think",
-    "didn't my tiger eat your ass?"
+    "didn't my tiger eat your ass?",
+    "kill beef, go ham",
+    
 ]
 
 async function load_home(){
