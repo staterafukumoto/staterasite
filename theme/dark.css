@@ -3,11 +3,10 @@
     --header-gradient: #0a0b0dC8;
     --sidebar-colour: #0c0d0f;
     --card-colour: #0c0d0f;
-
+    
     --wp-site-bg: #111;
 
-    --primary-accent: #009cde;
-    /* --primary-accent: #ff0060; */
+    --primary-accent: #0092ce;
     --secondary-accent: #faaf3a;
 
     --text-colour: #e0e0e0;
@@ -20,7 +19,7 @@
     --comm-sidebar-colour: #00000064;
     --modal-bg: #212121;
 
-    --msg-box-gradient: linear-gradient(to top, #0053b0,#0078fe);
+    --msg-box-gradient: linear-gradient(to top, #a3003f,#ff0060);
     --msg-box-text-color: white;
 
     --invert-state: 0;

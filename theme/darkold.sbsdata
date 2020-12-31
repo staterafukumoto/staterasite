@@ -1,12 +1,13 @@
 *{
     --main-bg-colour: #0a0b0d;
-    /* --header-gradient: linear-gradient(to bottom, #191c21C8 0%,#101216C8 100%); */
-    /* --header-gradient: #101216C8; */
     --header-gradient: #0a0b0dC8;
     --sidebar-colour: #0c0d0f;
     --card-colour: #0c0d0f;
 
-    --primary-accent: #009cde;
+    --wp-site-bg: #111;
+
+    /* --primary-accent: #009cde; */
+    --primary-accent: #ff0060;
     --secondary-accent: #faaf3a;
 
     --text-colour: #e0e0e0;
