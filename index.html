@@ -100,7 +100,7 @@
 <div id="mainsitebanner">
     <div id="mdr-shdw"></div>
     <span id="msb-hdr">
-        i am statera fukumoto.
+        i am statera fukumoto
     </span>
     <img src="img/sitebanner.jpg" id="msb-img" class="nonselect">
 </div>
@@ -117,11 +117,12 @@
         <span class="tagtext">he / him</span>
         <span class="tagtext">taken</span>
         <span class="tagtext">funny meme</span>
+        <span class="tagtext">pogchamp enthusiast</span>
         <span class="tagtext">tech hobbyist</span>
         <span class="tagtext">chaotic dumbass</span>
         <span class="tagtext">fukumoto</span>
         <span class="tagtext"><a href="http://lgbta.wikia.org/wiki/demisexual" target="_blank" class="articlelink">demisexual</a></span>
-        <span class="tagtext">your favourite b-movie antagonist ✨</span>  
+        <span class="tagtext">your favourite b-movie antagonist <span style="font-size: 10px;">✨</span></span>  
     </center>
     <br><hr>
         <p class="cardpara">
@@ -135,8 +136,12 @@
     <span class="header"> i make stickers </span>
     <i class="material-icons link" id="stickers" onclick="copyClipboard(this.id)" title="link to this card">link</i>
     <hr>
-    <a href="https://t.me/addstickers/staterafukumoto" target="_blank"><img width="250px"src="img/mainpack.png"></a>
-    <a href="https://t.me/addstickers/stateramemes" target="_blank"><img width="250px"src="img/memepack.png"></a>
+    <div onclick="telegramStickers('statera3d')" class="stickerlinks"><img width="136px"src="img/stickerpack3d.png"></div>
+    <div onclick="telegramStickers('staterafukumoto')" class="stickerlinks"><img width="136px"src="img/stickerpackretro.png"></div>
+    <div onclick="telegramStickers('stateramemes')" class="stickerlinks"><img width="136px"src="img/stickerpackmemes.png"></div>
+
+    <br>
+    <span style="opacity: 0.6;"> <i>(requires a vaguely recent telegram client)</i> </span>
 </div>
 
 <div class="card">
@@ -167,53 +172,61 @@
     <span class="vheader"> site version </span>
     <hr>
     <span style="font-size: 18px;" class="nonselect">
-        v3.1.1
+        v3.1.3
     </span> <br> <br>
     <span class="nonselect"> 
-        last updated: 31st december 2020
+        last updated: 3 february 2021
     </span>
     <br><br>
     <span class="nonselect" style="text-align: left;"> 
         <ul>
-            <li>updated web preview image</li>
-            <li>updated splash box colours</li>
-            <li>modified logo</li>
-            <li>to access old site, request memories</li>
-            <li> tweaked 404 page</li>
-                <ul>
-                    <li>fixed font</li>
-                    <li>locally sourced background image</li>
-                </ul>
-            <li>redesigned links page</li>
-            <li>new wallpapers</li>
-            <li> made with macOS banner. in case you forgot.</li>
-
+            <li> switched accent colour to the new one </li>
+            <li> updated the favicon (hopefully) </li>
+            <li> updated sticker packs (finally)</li>
+            <ul>
+                <li> they now open telegram directly, thanks to the tg subsystem</li>
+                <li> now showing the new 3d pack </li>
+                <li> packs now use their icons that they use on telegram </li>
+            </ul>
+            <li> made the message bubble the same in light mode</li>
+            <li> the start page is previewable but non-functional</li>
+            <li> resizing shouldn't be slow anymore</li>
+            <li> new subsystem for handling telegram protocol links directly </li>
+            <ul>
+                <li> this means that telegram links should now open telegram directly</li>
+                <li> however, this does mean you'll need javascript enabled.</li>
+            </ul>
+            <li> the header ONLY shows the logo now, instead of sometimes showing the wordmark</li>
+            <li> 
+                <a href="https://everymac.com/systems/apple/iphone/specs/apple-iphone-specs.html#content21-title" class="articlelink" target="_blank"> 
+                    this is last version of this website that will run on the iPhone 2g
+                </a>
+            </li>
         </ul>
         <hr>
         <span class="vheader"> what's coming next? </span>
         <hr>
         <ul>
-            <li>yet another colour redesign</li>
             <li>a slick minimalistic custom browser homepage</li>
-            <li>a redesigned mobile wallpaper gallery</li>
+            <li>a redesigned mobile wallpaper gallery</li> 
             <li>non-google analytics</li>
             <ul>
-                <li>will be less invasive</li>
-                <li>this will also remove any need for a cookies banner</li>
+                <li> will be less invasive</li>
+                <li> this will also remove any need for a cookies banner</li>
+                <li> consequent removal of cookies banner</li>
             </ul>
-            <li>removal of cookies banner</li>
             <li>auto dark / light mode depending on your system theme</li>
-            <li>figure out why resizing is so damn slow now</li>
+            <li> redesigned payments page </li>
         </ul>
 
     </span>
 </div>
 
-<img src="/img/macmadebanner.png" class="macbanner nonselect" onclick="notificationInput('eat shit, mac haters. lmao')" draggable="false">
+<img src="/img/macmadebanner.png" class="macbanner nonselect" onclick="createToast('eat shit, mac haters. lmao')" draggable="false">
 <br>
 
 <span class="copyright">
-    &copy; <b>statera fukumoto</b> 2018 &mdash; 2021
+    &copy; <b>statera a. fukumoto</b> 2018 &mdash; 2021
     <br>
     <span style="opacity:0.4;">
         not stealing my shit is poggers.
@@ -238,13 +251,12 @@
 <script src="scripts/clipboardlogic.js"></script>
 <script src="scripts/waywork.js"></script>
 <script src="scripts/nf.js"></script>
-<!-- <script src="scripts/cntdwn.js"></script> -->
 <script src="scripts/sidebar.js"></script>
 <script src="scripts/siteversion.js"></script>
 
 <script src="scripts/theme_manager.js"></script>
 
 <script src="scripts/homepage_easteregg.js"></script>
+<script src="scripts/telegramhandler.js"></script>
 
-<!-- <script src="scripts/april-fools.js"></script> -->
 </body>

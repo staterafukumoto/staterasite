@@ -68,7 +68,7 @@ function createStyle(className, attributes){
 function createToast(input){
     createStyle(
         "wwtoast",
-        "position: absolute; bottom: 68px; right: 60px; left: 60px; z-index: 500; background: #078f96; color: white; user-select: none; border-radius: 4px; transition: 0.3s all ease-in-out; line-height: 26px; font-size: 18px; padding-left: 2px; padding-right: 2px; padding-top: 6px; padding-bottom: 6px; text-align: center; font-family: sans-serif;"
+        "position: absolute; bottom: 68px; right: 60px; left: 60px; z-index: 500; background: #212121; color: white; user-select: none; border-radius: 4px; transition: 0.3s all ease-in-out; line-height: 26px; font-size: 18px; padding-left: 2px; padding-right: 2px; padding-top: 6px; padding-bottom: 6px; text-align: center; font-family: sans-serif;"
     )
     var toastid = "toast" + generateID()
     createTag("div",toastid,"wwtoast")

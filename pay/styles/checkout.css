@@ -54,7 +54,7 @@
     width: 92px;
     height: 92px;
     border-radius: 999px;
-    border: 6px solid var(--small-text-colour);
+    border: 6px solid var(--primary-accent);
     background-color: grey;
     user-select: none;
     display: block;

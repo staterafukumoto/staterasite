@@ -45,6 +45,12 @@ function checkTheme(){
 
 // proof of concept changing with system thing
 
+// if (window.matchMedia && window.matchMedia('(prefers-color-scheme)')){
+//     alert("Browser supported")
+// } else{
+//     alert("browser unsupported")
+// }
+
 // function changeWithSystem(){
 // 	if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
 //         if (window.theme == "dark"){

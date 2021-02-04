@@ -6,8 +6,10 @@
     
     --wp-site-bg: #111;
 
-    --primary-accent: #0092ce;
-    --secondary-accent: #faaf3a;
+    --primary-accent: #ff0060;
+    /* --primary-accent: #00b7ff; */
+    /* --secondary-accent: #ff9d00; */
+    --secondary-accent: #00b7ff;
 
     --text-colour: #e0e0e0;
     --some-text-colour: #aaaaaa;

@@ -129,7 +129,8 @@ body{
 #bheader{
     color: var(--text-colour);
     font-size: 24px;
-    font-family: 'Lexend Deca', sans-serif;
+    /* font-family: 'Lexend Deca', sans-serif; */
+    font-family: 'Inter', sans-serif;
     font-weight: bold;
 
     padding-top: -2;
@@ -137,6 +138,8 @@ body{
     line-height: 72px;
     height: 72px;
     display: inline-block;
+
+    text-align: left;
     /* background: blue; */
 }
 

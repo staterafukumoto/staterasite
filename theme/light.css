@@ -7,8 +7,10 @@
 
     --wp-site-bg: #ededed;
 
-    --primary-accent: #0078fe;
-    --secondary-accent: #aa6900;
+    --primary-accent: #ff0060;
+    /* --primary-accent: #00b7ff; */
+    /* --secondary-accent: #ff9d00; */
+    --secondary-accent: #00b7ff;
 
     --text-colour: black;
     --some-text-colour: #222;
@@ -20,7 +22,7 @@
     --comm-sidebar-colour: #f7f7f7;
     --modal-bg: #212121;
 
-    --msg-box-gradient: linear-gradient(to top, #0053b0,#0078fe);
+    --msg-box-gradient: linear-gradient(to top, #a3003f,#ff0060);
     --msg-box-text-color: white;
 
     --invert-state: 0.9;

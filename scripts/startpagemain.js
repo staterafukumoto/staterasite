@@ -5,5 +5,5 @@ document.addEventListener('load',function(){
 })
 
 window.onload = function (){
-    document.getElementById("searchbar").focus()
+    // document.getElementById("searchbar").focus()
 }

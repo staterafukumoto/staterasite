@@ -140,3 +140,21 @@ body{
     line-height: 40px;
     /* background-color: green; */
 }
+
+#underconstruction{
+    position: absolute;
+
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+
+    background-color: rgba(0,0,0,0.75);
+    z-index: 20;
+
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 26px;
+    color: white;
+    text-align: center;
+    padding-top: 25%;
+}
