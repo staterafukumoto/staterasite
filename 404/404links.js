@@ -14,6 +14,10 @@ function goPay(){
     window.location.href = "/pay"
 }
 
+function goBlog(){
+    window.location.href = "/blog"
+}
+
 function bruh(){
     var audio = new Audio('/img/bruh.mp3');
     audio.play()

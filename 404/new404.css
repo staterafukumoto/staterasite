@@ -1,0 +1,122 @@
+body{
+    background: #0a0b0d;
+}
+
+#headerimg{
+    position: absolute;
+    width: 50px;
+    left: calc(50% - 25px);
+    top: 12px;
+}
+
+#headerline{
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 70px;
+    height: 3px;
+    background: linear-gradient(to left, transparent, rgba(255,255,255,0.5), transparent);
+}
+
+#card{
+    display: block;
+    width: 60vw;
+    height: 60vh;
+    /* background-color: white; */
+    min-width: 350px;
+    max-width: 600px;
+
+    min-height: 400px;
+
+    margin-top: 60px;
+}
+
+@media only screen and (max-width: 800px){
+    #card{
+        width: 70vw;
+        height: 60vh;
+    }
+}
+
+#hero{
+    display: block;
+    width: 200px;
+
+    pointer-events: none;
+
+    user-select: none; /*everyone else */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    cursor: default;
+    
+    margin: 0 0 0 0;
+}
+
+.errorheader{
+    font-family: 'Lexend Deca', sans-serif;
+    user-select: none; /*everyone else */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    cursor: default;
+    
+    color: #ff0060;
+    font-size: 32px;
+    display: block;
+}
+
+.errorsubheader{
+    font-family: 'Lexend Deca', sans-serif;
+    user-select: none; /*everyone else */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    cursor: default;
+    
+    color: #454545;
+    font-size: 18px;
+    display: block;
+}
+
+#errormenu{
+    margin-top: 12px;
+
+    transition: 0.2s background ease;
+    background: rgba(255,255,255,0.05);
+
+    width: 50vw;
+    max-width: 350px;
+    min-width: 100px;
+
+    border-radius: 12px;
+
+    border: 1px solid rgba(255,255,255,0.3);
+
+}
+
+.errormenuitem{
+    display: block;
+    font-family: 'Lexend Deca', sans-serif;
+
+    user-select: none; /*everyone else */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    cursor: pointer;
+
+    color: rgba(255,255,255,0.9);
+
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+    border-radius: 12px;
+
+
+    transition: 0.2s background ease, 0.2s width ease;
+
+    width: 75%;
+}
+
+.errormenuitem:hover{
+    background: rgba(255,255,255,0.1);
+    width: 100%;
+
+    /* color: #0092ce; */
+}

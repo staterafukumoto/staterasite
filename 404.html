@@ -10,7 +10,7 @@
     <link 
         rel="stylesheet" 
         type="text/css" 
-        href="/404/404.css"
+        href="/404/new404.css"
     >
     <link 
         id="themesection"
@@ -50,37 +50,26 @@
 </head>
 <body>
 
-<!-- for future use -->
+<img src="/img/logo_white.png" id="headerimg" draggable="false">
+<div id="headerline"></div>
 
-<div id="fofh">
-    <center>
-        <img src="/img/wordmark_white.png" id="fofpic" draggable="false">
-    </center>
+<center>
+
+<div id="card">
+    <img src="/img/arthur/error.png" id="hero" draggable="false">
+    <span class="errorheader"> error 404 </span>
+    <span class="errorsubheader"> i can't find what you're looking for. <br> why not try something else? </span>
+    <div id="errormenu">
+        <span class="errormenuitem" onclick="nav('')">home page</span>
+        <span class="errormenuitem" onclick="nav('blog')">my blog</span>
+        <span class="errormenuitem" onclick="nav('wallpapers')">wallpapers</span>
+        <span class="errormenuitem" onclick="nav('pay')">pay me</span>
+        <span class="errormenuitem" onclick="nav('contact')">contact me</span>
+        <span class="errormenuitem" onclick="bruh()">initiate bruh</span>
+    </div>
 </div>
 
-
-<center id="bruh">
-    <span id="title">this is a 404</span>
-    <span id="subtitle"> maybe you'd rather something else?</span>
-    <div id="sites">
-        <span class="sitesect" onclick="goHome()"> home </span>
-        <span class="sitesect" onclick="goWp()"> wallpapers </span>
-        <span class="sitesect" onclick="goPay()"> pay </span>
-        <span class="sitesect" onclick="bruh()"> bruh </span>
-    </div>
 </center>
 
-<div id="border"></div>
-
-<img src="/wallpapers/imgs/thumbs/youth.jpg" id="bg" onload="onSplashLoad()">
-
-
-<!-- <img src="https://picsum.photos/1600/900" id="bg" onload="ready(this.id)"> -->
-
-<!-- <span id="credit"> background is provided by <a href="https://picsum.photos" target="_blank">lorem picsum</a> </span> -->
-
-<script src="/404/404.js"></script>
-<script src="/404/404links.js"></script>
-
-
+<script src="scripts/new404.js"></script>
 </body>
