@@ -1,7 +1,7 @@
 *{
     --main-bg-colour: #ededed;
-    /* --header-gradient: #edededc8; */
-    --header-gradient: #ffffffc8;
+    --header-gradient: #edededc8;
+    /* --header-gradient: #ffffffc8; */
     --sidebar-colour: white;
     --card-colour: white;
 
@@ -16,13 +16,14 @@
     --some-text-colour: #222;
     --some-header-colour: #444;
     --some-hover-bg: rgba(0,0,0,0.05);
+    --some-active-background: rgba(0,0,0,0.09);
     --small-text-colour: #212121;
     --standard-border-colour: #c8c8c8;
 
     --comm-sidebar-colour: #f7f7f7;
     --modal-bg: #212121;
 
-    --msg-box-gradient: linear-gradient(to top, #a3003f,#ff0060);
+    --msg-box-gradient: #d30051;
     --msg-box-text-color: white;
 
     --invert-state: 0.9;
@@ -33,4 +34,10 @@
 
     --wp-label-colour: rgba(0,0,0,0.1);
     --wp-resol-colour: rgba(0,0,0,0.2);
+
+    --button-background: #d30051;
+    --button-text: white;
+
+    --sidebar-border-colour: transparent;
+    --sidebar-border-width: 0px;
 }

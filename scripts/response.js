@@ -1,5 +1,5 @@
 // easy config
-var smBreakPoint = 900
+var smBreakPoint = 1000
 var zmBreakPoint = 330
 
 

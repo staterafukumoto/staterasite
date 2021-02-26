@@ -12,16 +12,17 @@
     --secondary-accent: #00b7ff;
 
     --text-colour: #e0e0e0;
-    --some-text-colour: #aaaaaa;
-    --some-header-colour: #bbbbbb;
-    --some-hover-bg: rgba(255,255,255,0.05);
+    --some-text-colour: #dadada;
+    --some-header-colour: #868686;
+    --some-hover-bg: rgba(255,255,255,0.04);
+    --some-active-background: rgba(255,255,255,0.05);
     --small-text-colour: #cccccc;
     --standard-border-colour: #212121;
 
     --comm-sidebar-colour: #00000064;
     --modal-bg: #212121;
 
-    --msg-box-gradient: linear-gradient(to top, #a3003f,#ff0060);
+    --msg-box-gradient: #d30051;
     --msg-box-text-color: white;
 
     --invert-state: 0;
@@ -32,4 +33,11 @@
 
     --wp-label-colour: rgba(255,255,255,0.1);
     --wp-resol-colour: rgba(255,255,255,0.05);
+
+    --button-background: #d30051;
+    --button-text: rgba(255,255,255,0.9);
+
+    --sidebar-border-colour: black;
+    --sidebar-border-width: 1px;
+
 }

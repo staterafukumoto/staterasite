@@ -18,16 +18,18 @@ body{
 }
 
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
     transition: 0.2s background ease;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--sb-track-colour); 
+  /* background: var(--sb-track-colour);  */
+  background: rgba(0,0,0,0);
 }
 
 ::-webkit-scrollbar-thumb {
   background: var(--sb-thumb-colour);
+  border-radius: 6px;
 /* 
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px; */
@@ -44,7 +46,7 @@ body{
     height: 56px;
 
     background: var(--header-gradient);
-    border-bottom: 1px solid var(--standard-border-colour);
+    /* border-bottom: 1px solid var(--standard-border-colour); */
     
     /* why does this work like crap */
     backdrop-filter: saturate(200%) blur(20px);
@@ -77,7 +79,7 @@ body{
     padding-left: 24px;
     padding-right: 24px;
     font-size: 32px;
-    color: var(--primary-accent);
+    color: var(--text-colour);
     z-index: 30;
     opacity: 1;
     transition: 0.2s opacity ease, 0.2s color ease, 0.2s transform ease;
@@ -93,7 +95,7 @@ body{
 }
 
 .hmgOUT{
-    color: var(--secondary-accent) !important;
+    color: var(--primary-accent) !important;
     transform: scaleX(1.5) !important;
 }
 
@@ -114,7 +116,7 @@ body{
     overflow: auto;
     background: var(--sidebar-colour);
     z-index: 50;
-    border-right: 1px solid var(--standard-border-colour);
+    border-right: var(--sidebar-border-width) solid var(--sidebar-border-colour);
 
     /* text-align: center; */
     user-select: none; /*everyone else */
@@ -239,11 +241,11 @@ body{
     width: 92px;
     height: 92px;
     /* left: calc(50% - 46px - 3px); */
-    left: 16px;
-    top: 86px;
+    left: 22px;
+    top: 92px;
     border-radius: 999px;
     /* border: 6px solid red; */
-    border: 6px solid var(--sidebar-colour);
+    /* border: 6px solid var(--sidebar-colour); */
     background-color: var(--sidebar-colour);
     user-select: none;
 }
@@ -254,7 +256,9 @@ body{
     user-select: none;
     font-size: 22px;
     display: block;
-    padding-top: 50px;
+    padding-top: 65px;
+    text-align: left;
+    margin-left: 15px;
 }
 
 .sideSubtitle{
@@ -272,26 +276,46 @@ body{
     align-items: center;
     justify-content: center;
     position: absolute;
-    overflow: hidden;
+    /* overflow: hidden; */
+    text-overflow: ellipsis;
 
-    padding-left: 5%;
-    padding-right: 3%;
+    padding-left: 4%;
+    padding-right: 4%;
 
     left: 128px;
-    right: 16px;
-    top: 110px;
+    right: 12px;
+    top: 105px;
     height: 64px;
 
     background: var(--msg-box-gradient);
-    clip-path: polygon(3% 0, 100% 0, 100% 100%, 0 100%, 3% 93%);
+    /* clip-path: polygon(3% 0, 100% 0, 100% 100%, 0 100%, 3% 93%); */
+
+    border-radius: 12px;
 
     transition: 0.1s transform ease;
+
+
 }
 
 .sideSubtitle:active{
     transform: scale(0.95);
 }
 
+#sidebararrow {
+    position: absolute;
+    bottom: 0px;
+    left: -12px; 
+    width: 0; 
+    height: 0; 
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    
+    border-bottom: 26px solid var(--msg-box-gradient);
+}
+
+#subtitleoverflow{
+    overflow: hidden;
+}
 
 .subtitleCredit{
     color: var(--small-text-colour);
@@ -300,11 +324,11 @@ body{
 
 #artfeaturecover{
     position: absolute;
-    top: 0px;
+    top: 10px;
     left: 0px;
     width: 100%;
-    height: 128px;
-    background: linear-gradient(to bottom, transparent, transparent, var(--sidebar-colour));
+    height: 118px;
+    background: linear-gradient(to bottom, transparent, var(--sidebar-colour));
 }
 
 .someheader{
@@ -312,7 +336,7 @@ body{
     font-family: 'Lexend Deca', sans-serif;
 
     user-select: none;
-    font-size: 22px;
+    font-size: 16px;
     display: block;
     left: 0px;
     right: 0px;
@@ -327,9 +351,6 @@ body{
     /* border-top: 2px var(--standard-border-colour) solid; */
     /* background: rgba(127,127,127,0.1); */
 
-    border-left: 6px solid var(--standard-border-colour);
-    border-bottom: 2px solid var(--standard-border-colour);
-
     user-select: none; /*everyone else */
     -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -340,10 +361,21 @@ a{
     text-decoration: none;
 }
 
+.someicon{
+    color: var(--primary-accent)
+}
+
 .somelink{
     padding-left: 16px;
     font-size: 18px;
     font-family: 'Lexend Deca', sans-serif;
+
+    margin-right: 8px;
+    margin-left: 8px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+
+    border-radius: 8px;
 
     user-select: none;
     display: block;
@@ -354,18 +386,16 @@ a{
 
     padding-top: 6px;
     padding-bottom: 6px;
-    border-left: 6px solid var(--standard-border-colour);
 }
 
 .somelink:hover{
-    padding-left: 26px;
+    /* padding-left: 26px; */
     background: var(--some-hover-bg);
 
 }
 
 .currentActive{
-    color: var(--primary-accent) !important;
-    border-left: 6px solid var(--primary-accent);
+    background-color: var(--some-active-background);
 }
 
 .disabled{
@@ -463,7 +493,7 @@ a{
 
 .linkbutton{
     display: inline-block;
-    border-radius: 24px;
+    border-radius: 6px;
     
     padding-left: 20px;
     padding-right: 20px;
@@ -472,15 +502,17 @@ a{
 
     margin-bottom: 5px;
 
+    background: var(--button-background);
+
 
     font-family: 'Lexend Deca', sans-serif !important;
-    color: var(--text-colour);
+    color: var(--button-text);
     
     user-select: none;
     cursor: pointer;
 
     transition: 0.2s filter ease;
-    border: 2px solid var(--primary-accent);
+    /* border: 2px solid var(--primary-accent); */
     transition: 0.2s filter ease;
     text-align: center;
 }
