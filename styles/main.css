@@ -178,7 +178,7 @@ body{
 
 .cheader{
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, ubuntu, sans-serif; */
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: var(--standard-font);
     /* display: block; */
     color: var(--small-text-colour);
 }
@@ -201,7 +201,7 @@ body{
 
 #ctitle{
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, ubuntu, sans-serif; */
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: var(--standard-font);
     position: absolute;
     user-select: none;
     font-size: 18px;
@@ -229,7 +229,7 @@ body{
 .featuretitle{
     color: var(--text-colour);
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, ubuntu, sans-serif; */
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: var(--standard-font);
     user-select: none;
     font-weight: 600;
     padding-top: 4px;
@@ -252,7 +252,7 @@ body{
 
 .sideTitle{
     color: var(--text-colour);
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: var(--standard-font);
     user-select: none;
     font-size: 22px;
     display: block;
@@ -263,7 +263,7 @@ body{
 
 .sideSubtitle{
     color: var(--msg-box-text-color);
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: var(--standard-font);
 
     user-select: none; /*everyone else */
     -webkit-touch-callout: none; /* iOS Safari */
@@ -333,7 +333,7 @@ body{
 
 .someheader{
     color: var(--some-header-colour);
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: var(--standard-font);
 
     user-select: none;
     font-size: 16px;
@@ -368,7 +368,7 @@ a{
 .somelink{
     padding-left: 16px;
     font-size: 18px;
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: var(--standard-font);
 
     margin-right: 8px;
     margin-left: 8px;
@@ -446,7 +446,7 @@ a{
     color: white;
     font-size: 22px;
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, ubuntu, sans-serif; */
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: var(--standard-font);
     overflow: hidden;
     text-align: center;
     white-space: nowrap;
@@ -505,7 +505,7 @@ a{
     background: var(--button-background);
 
 
-    font-family: 'Lexend Deca', sans-serif !important;
+    font-family: var(--standard-font)!important;
     color: var(--button-text);
     
     user-select: none;
@@ -683,7 +683,14 @@ a{
  
     z-index: 4;
 
-    opacity: 0.6;
+    opacity: 0;
+    transform: scale(1.5,0);
+    transition: 0.3s all ease;
+}
+
+.msb-img-loaded{
+    opacity: 0.6 !important;
+    transform: scale(1,1) !important;
 }
 
 #msb-hdr{
@@ -786,7 +793,7 @@ a{
 
 .copyright{
     color: var(--text-colour);
-    font-family: 'Lexend Deca', sans-serif;
+    font-family: var(--standard-font);
     opacity: 0.7;
 
     display: block;

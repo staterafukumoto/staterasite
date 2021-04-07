@@ -40,4 +40,7 @@
 
     --sidebar-border-colour: transparent;
     --sidebar-border-width: 0px;
+
+    --standard-font: "Lexend Deca", sans-serif;
+    /* --standard-font: "Inter", sans-serif; */
 }

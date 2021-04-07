@@ -1,20 +1,24 @@
+window.scrollRatio = 5.5
+window.postmaload = 16
+
+
 function adjustBanner(){
     //higher the number, the slower it scrolls, and choppier it looks
     // CANNOT BE GREATER THAN 10
-    var scrollRatio = 5.5
-
     var current = document.getElementById("rightwrapper").scrollTop         // current position
     var total = document.getElementById('rightwrapper').scrollHeight / 2    // total page height, divide by 2 because it's faster than viewport math
     var operation = current / total                                         // fractions!
     var moremath = operation * 100                                          // now get it to a meaningful number
 
     if (mobilecheck() == true){
+        // case: phones
 
-        // do not scroll animate on phones, it breaks hard.
+        document.getElementById("mainsitebanner").style.top = moremath * scrollRatio + "px"
 
     } else if(navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1){
+        // case: ipads
 
-        // do not scroll animate on iPads, it breaks slightly less so, but still
+        document.getElementById("mainsitebanner").style.top = moremath * scrollRatio + "px"
 
     }else{
         if (moremath => 0){
@@ -30,7 +34,9 @@ function adjustBanner(){
 }
 
 document.getElementById("rightwrapper").addEventListener("scroll", adjustBanner);
-window.setTimeout(adjustBanner,8)
+
+// adjust on page load 
+window.setTimeout(adjustBanner,postmaload)
 
 
 

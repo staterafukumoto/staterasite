@@ -8,7 +8,7 @@ function openPaypal(){
         window.open(paymenturl + value + currencycode)
     } else{
         //do nothing
-        alert("you can't donate nothing")
+        createToast("you cannot send us$0.00")
     }
 }
 
