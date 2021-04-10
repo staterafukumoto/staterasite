@@ -8,6 +8,7 @@
 // (the filenames must be the EXACT same in both directories.)
 
 wallpapers = [
+    ["maximus","maximus.jpg","7680 × 4320 (8k)"],
     ["you're welcome","yourewelcome.jpg","7680 × 4320 (8k)"],
     ["no <3","no_heart.jpg","7680 × 4320 (8k)"],
     ["4096 blank vhs vectorisation","4096-vhs.jpg","7680 × 4320 (8k)"],
