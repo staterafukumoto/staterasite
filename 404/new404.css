@@ -1,5 +1,7 @@
 body{
     background: #0a0b0d;
+
+    user-select: none;
 }
 
 #headerimg{
@@ -71,7 +73,7 @@ body{
     -webkit-user-select: none; /* Safari */
     cursor: default;
     
-    color: #454545;
+    color: white;
     font-size: 18px;
     display: block;
 }
@@ -119,4 +121,29 @@ body{
     width: 100%;
 
     /* color: #0092ce; */
+}
+
+#bg{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 100%;
+    border: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: -1;
+    height: 100%;
+    opacity: 0;
+    /* filter: blur(15px); */
+    object-fit: cover;
+    transform: scale(1.8);
+
+    transition: 0.8s opacity ease, 0.8s transform ease;
+}
+
+.bgloaded{
+    opacity: 0.3 !important;
+    transform: scale(1.1) !important;
 }

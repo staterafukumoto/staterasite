@@ -28,14 +28,14 @@ body{
     opacity: 0;
     filter: blur(15px);
     object-fit: cover;
-    transform: scale(1.8);
+    transform: scale(0,1);
 
     transition: 0.8s opacity ease, 0.8s transform ease;
 }
 
 .bgloaded{
-    opacity: 0.6 !important;
-    transform: scale(1.1) !important;
+    opacity: 0.4 !important;
+    transform: scale(1,1) !important;
 }
 
 #title{

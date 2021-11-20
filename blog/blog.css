@@ -26,3 +26,18 @@
 #blogcontent::-webkit-scrollbar-thumb:hover {
   background: var(--sb-thumb-colour-hover); 
 }
+
+#rss_header{
+  position: absolute;
+  right: 11px;
+  top: 11px;
+  height: 32px;
+  line-height: 32px;
+  width: 64px;
+  background: #f26522;
+  text-align: center;
+  font-family: 'Lexend Deca', sans-serif !important;
+  border-radius: 6px;
+  color: white;
+  border: 1px solid var(--text-colour);
+}

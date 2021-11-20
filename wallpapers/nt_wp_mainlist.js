@@ -63,7 +63,7 @@ wallpapers = [
     ["the barricade","the_barricade.jpg","5120 × 2880 (5k)"],
     // ["fight myself","fight_myself.jpg","5120 × 2880 (5k)"],
     ["oh no","ohno.jpg","5120 × 2880 (5k)"],
-    ["wtf is wrong with me","statstoes.jpg","5120 × 2880 (5k)"],
+    // ["wtf is wrong with me","statstoes.jpg","5120 × 2880 (5k)"],
     // ["life is short","haveawank.jpg","5120 × 2880 (5k)"],
     ["mirror (electric)","mirror_electric.jpg","5120 × 2880 (5k)"],
     ["mirror (royal)","mirror_royal.jpg","5120 × 2880 (5k)"],

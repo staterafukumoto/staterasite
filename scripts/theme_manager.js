@@ -4,12 +4,14 @@ function setLightTheme(){
     document.getElementById("themesection").href = "/theme/light.css"
     storeTheme("light")
     document.getElementById("thmmsg").innerHTML = "switch to dark mode"
+    document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#ededed');
 }
 
 function setDarkTheme(){
     document.getElementById("themesection").href = "/theme/dark.css"
     storeTheme("dark")
     document.getElementById("thmmsg").innerHTML = "switch to light mode"
+    document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#0a0b0d');
 }
 
 function toggleTheme(){
