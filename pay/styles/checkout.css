@@ -67,3 +67,34 @@
     height: 1px;
     display: block;
 }
+
+.paymentbutton{
+    border: 2px solid var(--standard-border-colour);
+    border-radius: 12px;
+    width: 190px;
+    display: inline-block;
+    padding-top: 6px;
+    padding-bottom: 3px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    height: 32px;
+}
+
+.venmospecialcase{
+    padding-top: 9px !important;
+    padding-bottom: 3px !important;
+    /* cannot get fucing working */
+}
+
+.pbpaypal{
+    background-color: orange;
+    padding-top: 9px !important;
+}
+
+.pbcashapp{
+    background-color: black;
+}
+
+.pbvenmo{
+    background: #2D8BC6;
+}
