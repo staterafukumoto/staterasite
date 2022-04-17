@@ -255,6 +255,7 @@ body{
     font-family: var(--standard-font);
     user-select: none;
     font-size: 22px;
+    line-height: 22px;
     display: block;
     padding-top: 65px;
     text-align: left;
@@ -814,4 +815,11 @@ a{
     border: 1px solid var(--some-header-colour);
     border-radius: 6px;
     user-select: all;
+}
+
+.sbpronouns{
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--text-colour);
+    opacity: 0.6;
 }
