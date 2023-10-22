@@ -17,6 +17,7 @@
     
     <meta name="keywords" content="statera, statera fukumoto, lykos, alopix, furry">
 
+    <script src="scripts/home_page_ONLY.js"></script>
 
     <link 
         rel="stylesheet" 
@@ -105,28 +106,36 @@
 
 <center>
 
+<div class="artcredit">
+    <span> header art by <a href="https://www.furaffinity.net/user/sinister-jordex/" target="_blank" class="artcreditlink">sinister-jordex</a></span>
+</div>
+
 <div class="card">
     <span class="header"> who am i? </span>
     <hr>
     <p class="cardpara">
-        purveyor of punchlines like “clap werewolf cheeks” and “poopa stinka *gets left in field*” to name a few.
-        <br> 
-        have you ever eaten a seventh slice of pizza even though you knew you really couldn’t fit anymore food in? 
-        have you ever made a website that you’re pretty sure no one looks at, but still insist on paying for the domain every year? 
-        does your driving playlist consist of changing the song at red lights because you can’t decide?  congrats, you make no sense 
-        either, and we can be friends. 
-
-        <br><br> i've been cursed since day one.
+        i fix phones and i pretend to fix (but mostly break) cars.
+        <br> <br> 
+        would you probably be better off with a sensible reliable toyota, but insist on buying shitboxes anyways? <br><br>
+        do you carry two laptops in your backpack even though they both do 90% the same thing? is one of them pink?<br><br>
+        have you ever made a website that you’re pretty sure no one looks at, but still insist on paying for the domain every year? <br><br>
+        do you skip back to your favourite part of the song because you felt as though you didn't enjoy it hard enough?<br><br>
+        congrats, you make no sense either, and we'd probably get along infamously.
     <hr>
     <span class="tagsinformer"> tags: </span>
     <center>
         <span class="tagtext">he / they</span>
-        <span class="tagtext">tech hobbyist</span>
-        <span class="tagtext">"car guy"</span>
+        <span class="tagtext">repair technician</span>
+        <span class="tagtext">car enthusiast</span>
         <span class="tagtext">chaotic dumbass</span>
         <span class="tagtext">fukumoto</span>
         <span class="tagtext"><a href="http://lgbta.wikia.org/wiki/demisexual" target="_blank" class="articlelink">demisexual</a></span>
-        <span class="tagtext"><b>c</b>apitalism <b>e</b>radication <b>o</b>rdinator <span style="font-size: 10px;">✨</span></span>  
+        <span class="tagtext">leftist</span>
+        <span class="tagtext">hobby web designer</span>
+        <span class="tagtext">amateur audiophile</span>
+        <span class="tagtext">video game enjoyer</span>
+        <span class="tagtext">tabletop chaos bringer</span>
+        <span class="tagtext">crackhead with powertools</span>
     </center>
 </div>
 
@@ -157,9 +166,12 @@
 <div class="card">
     <span class="header"> i make wallpapers! </span>
     <hr>
-    <p class="cardpara"> here's a collection of wallpapers i've made, and i give them to you, free to use,
-        on the condition you do not claim them as your own. basically, just don't fuck me over, man. 
-        i work hard on these.
+    <p class="cardpara"> here's a collection of wallpapers i've made, feel free to put them on 
+        your work computer, your old thinkpad, your sparkly macbook, your samsung smart fridge,
+        and even your internet connected dog.
+        <br><br>
+        basically just don't reupload them and say they're yours. or i'll have to add watermarks
+        and no one wants that.
     </p>
     <a href="wallpapers/"  target="" class="linkbutton">show me the wallpapers</a>
 </div>
@@ -168,19 +180,21 @@
     <span class="vheader"> site version </span>
     <hr>
     <span style="font-size: 18px;" class="nonselect">
-        v4.2
+        v4.2.1
     </span> <br> <br>
     <span class="nonselect"> 
-        last updated: 17 feb 2022
+        last updated: 21 oct 2023
     </span>
     <br><br>
     <span class="nonselect" style="text-align: left;"> 
         <ul>
             <li> new banner, yay</li>
             <li> even more sidebar splash messages </li>
-            <li> updated icon to match social media </li>
+            <li> reworded most of the home screen language to be more current</li>
+            <li> last version supporting iPod Touch 2nd gen, and iPhone 3G (jk)</li>
+            <li> fixed a bug where the banner would sometimes not work.</li>
         </ul>
-        <hr>
+        <!-- <hr>
         <span class="vheader"> what's coming next? </span>
         <hr>
         <ul>
@@ -192,19 +206,19 @@
                 <li> this will also remove any need for a cookies banner</li>
             </ul>
             <li>auto dark / light mode depending on your system theme</li>
-        </ul>
+        </ul> -->
 
     </span>
 </div>
 
-<img src="/img/macmadebanner.png" class="macbanner nonselect" onclick="createToast('eat shit, mac haters. lmao')" draggable="false">
+<img src="/img/macmadebanner.png" class="macbanner nonselect" onclick="createToast('now with m1!')" draggable="false">
 <br>
 
 <span class="copyright">
-    &copy; <b>statera t. fukumoto</b> 2018 &mdash; 2022
+    &copy; <b>statera t. fukumoto</b> 2018 &mdash; 2023
     <br>
     <span style="opacity:0.4;">
-        not stealing my shit is poggers.
+        baked fresh by small gnomes.
     </span>
 </span>
 
@@ -220,7 +234,7 @@
 <div id="cookieconsent"></div>
 
 
-<script src="scripts/home_page_ONLY.js"></script>
+<!-- <script src="scripts/home_page_ONLY.js"></script> -->
 
 <script src="scripts/response.js"></script>
 <script src="scripts/clipboardlogic.js"></script>
@@ -233,5 +247,10 @@
 
 <script src="scripts/homepage_easteregg.js"></script>
 <script src="scripts/telegramhandler.js"></script>
+
+<script>
+    // i know inline script is frowned upon leave me alone.
+    document.getElementById("rightwrapper").addEventListener("scroll", adjustBanner);
+</script>
 
 </body>

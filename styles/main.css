@@ -685,13 +685,16 @@ a{
     z-index: 4;
 
     opacity: 0;
-    transform: scale(1.5,0);
-    transition: 0.3s all ease;
+    transform: scale(1.4,0.1);
+    transition: 0.3s all cubic-bezier(0,.74,.65,.99);
+    /* filter: blur(100px) grayscale(100%); */
 }
 
 .msb-img-loaded{
     opacity: 0.6 !important;
     transform: scale(1,1) !important;
+    /* filter: blur(0px) !important; */
+
 }
 
 #msb-hdr{
@@ -822,4 +825,16 @@ a{
     line-height: 22px;
     color: var(--text-colour);
     opacity: 0.6;
+}
+
+.artcredit{
+    color: white; 
+    font-family: 'Lexend Deca', sans-serif !important;
+    opacity: 0.8;
+    text-shadow: 0px 0px 2px #555;
+}
+
+.artcreditlink{
+    color: white !important;
+    text-decoration: underline;
 }

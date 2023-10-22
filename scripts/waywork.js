@@ -105,6 +105,7 @@ function createToastToParent(input,parent){
     },5000)
 }
 
+// pretty much only useful for electron apps. 
 function windowDragAdd(tagid){
     document.getElementById(tagid).style.webkitAppRegion = "drag"
 }
@@ -125,6 +126,7 @@ function generateID(){
     }
 }
 
+// useful for adding CSS files live.
 function addCSS(filename){
     var head = document.getElementsByTagName('head')[0];
     var style = document.createElement('LINK');

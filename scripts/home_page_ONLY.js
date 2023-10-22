@@ -1,9 +1,9 @@
-window.scrollRatio = 5.5
+window.scrollRatio = 5.432
 window.postmaload = 16
 
 
 function adjustBanner(){
-    //higher the number, the slower it scrolls, and choppier it looks
+    // higher the number, the slower it scrolls, and choppier it looks
     // CANNOT BE GREATER THAN 10
     var current = document.getElementById("rightwrapper").scrollTop         // current position
     var total = document.getElementById('rightwrapper').scrollHeight / 2    // total page height, divide by 2 because it's faster than viewport math
@@ -33,7 +33,6 @@ function adjustBanner(){
     }
 }
 
-document.getElementById("rightwrapper").addEventListener("scroll", adjustBanner);
 
 // adjust on page load 
 window.setTimeout(adjustBanner,postmaload)
