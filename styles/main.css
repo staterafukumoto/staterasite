@@ -9,6 +9,7 @@ body{
     height: 100%;
     margin: 0 0;
     transition: 0.3s transform ease;
+    /* filter: blur(0.2px); */ /* for when i'm feeling evil */
 }
 
 ::selection {

@@ -8,6 +8,12 @@
 // (the filenames must be the EXACT same in both directories.)
 
 wallpapers = [
+    ["リグマ・ボールズ","riguma.jpg","7680 × 4320 (8k)"],
+    ["open road","openroad.jpg","7680 × 4320 (8k)"],
+    ["marvels","marvels.jpg","7680 × 4320 (8k)"],
+    ["dark_report","dark_report.jpg","7680 × 4320 (8k)"],
+    ["one x (dark)","one_x_dark.jpg","7680 × 4320 (8k)"],
+    ["one x (light)","one_x_light.jpg","7680 × 4320 (8k)"],
     ["NT","nt.jpg","7680 × 4320 (8k)"],
     ["imperfect art","imperfect_art.jpg","7680 × 4320 (8k)"],
     ["decade dance","decade_dance.jpg","7680 × 4320 (8k)"],
