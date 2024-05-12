@@ -9,7 +9,7 @@
 
 wallpapers = [
     ["weak and wicked","weak_and_wicked.jpg","7680 × 4320 (8k)"],
-    ["DNA","DNA.jpg","7680 × 4320 (8k)"],
+    ["DNA.","DNA.jpg","7680 × 4320 (8k)"],
     ["リグマ・ボールズ","riguma.jpg","7680 × 4320 (8k)"],
     ["open road","openroad.jpg","7680 × 4320 (8k)"],
     ["marvels","marvels.jpg","7680 × 4320 (8k)"],
