@@ -155,7 +155,23 @@ const phrases = [
     "shinji get in the robot",
     "colourful!",
     "<span style='text-shadow: 0px 0px 2px #555;'> <span style='color: skyblue'>c</span><span style='color: orange'>o</span><span style='color: yellow'>l</span><span style='color: lime'>o</span><span style='color: aqua'>u</span><span style='color: pink'>r</span><span style='color: turquoise'>f</span><span style='color: aliceblue'>u</span><span style='color: antiquewhite'>l</span>!",
-    "<span style='display: block'>css <br><br><br> is awesome</span>"
+    "<span style='display: block'>css <br><br><br> is awesome</span>",
+    "DOT FUCK 'EM UP",
+    "nuh uh",
+    "WHAT IS IT THE BRAIDS?",
+    "dear adonis",
+    "le smooch",
+    "now with chemically induced gay frogs",
+    "now with frog induced gay chemicals",
+    "now with gay induced frog chemicals",
+    "who up drum",
+    "now with frog",
+    "CVT go BRRRRR",
+    "I AM DRIVING A LIFTED DODGE RAM PICKUP TRUCK",
+    "naturally aspirate THIS DICK",
+    "WILL RUN",
+    "#1 weezer fan! (i hate weezer)",
+    "if u like that."
 ]
 
 async function load_home(){
