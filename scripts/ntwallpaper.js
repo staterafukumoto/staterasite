@@ -37,9 +37,12 @@ function copyCurrent(){
 function cbCopy(input) {
     navigator.clipboard.writeText(input).then(function() {
         /* clipboard successfully set */
-        console.log("copy successful!")
+        // console.log("copy successful!")
+        createToast("link copied successfully")
     }, function() {
         /* clipboard write failed */
+        // console.log("copy failed. this is most likely due to permission issue")
+        createToast("copy failed.")
     })
 }
 
@@ -169,7 +172,7 @@ function adjustPseudoTable(){
         document.getElementById("nt_tc_background").style.filter = "blur(5px)"
     }
 
-    console.log(document.getElementById("rightwrapper").clientWidth)
+    // console.log(document.getElementById("rightwrapper").clientWidth)
 }
 
 adjustPseudoTable()
