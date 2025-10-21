@@ -30,7 +30,7 @@ const phrases = [
     "cave5.ogg",
     "dummy thicc",
     "you wouldn't reimplement an api",
-    "zed's not dead",
+    "everything a to zedd",
     "i shouldn't have said it that way, but still.",
     "too angry to die",
     "also try minecraft!",
@@ -121,7 +121,6 @@ const phrases = [
     "postmodern",
     "very nais",
     "f-sport deez nuts",
-    "the 2nd coolest juke on twitter",
     "ladies and gentlemen, the car no longer starts",
     "must be made by BMW the way i8 the booty",
     "pls do not the cat",
@@ -157,7 +156,7 @@ const phrases = [
     "don't talk to me until i've eaten this mug whole",
     "what if it was called freaktera and nothing changed",
     "mustard",
-    "what if the balls got hard to",
+    "what if the balls got hard too",
     "we can finally be bees.",
     "you can be a bee",
     "you'll live like a bee. a pet.",
@@ -174,7 +173,9 @@ const phrases = [
     "heUGH HOOO",
     "bark bark bark",
     "toyota how i'm supposed to get the fucking bolt out",
-    "wo' oh bo' ohl"
+    "wo' oh bo' ohl",
+    "<s>barking like a dog.</s> i mean type shit",
+    "paranormal groaning"
 ]
 
 async function load_home(){
