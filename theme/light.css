@@ -1,9 +1,9 @@
 *{
-    --main-bg-colour: #ededed;
+    --main-bg-colour: #e8e0e3;
     --header-gradient: #edededc8;
     /* --header-gradient: #ffffffc8; */
-    --sidebar-colour: white;
-    --card-colour: white;
+    --sidebar-colour: #ededed;
+    --card-colour: #ededed;
 
     --wp-site-bg: #ededed;
 
