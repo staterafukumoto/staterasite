@@ -71,5 +71,12 @@ function submitHPrompt(){
 //     createInboundMsg("message " + i + " " + generateID() + " " + generateID() + " " + generateID() + " " + generateID(),"bot")
 //     i++
 // }
+
+document.getElementById("aihl-input").addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        submitHPrompt()
+    }
+})
+
 createInboundMsg(sysDisclose,"system")
 createInboundMsg(botOpenMsg[Math.floor(Math.random() * botOpenMsg.length)],"bot")
