@@ -175,7 +175,10 @@ const phrases = [
     "toyota how i'm supposed to get the fucking bolt out",
     "wo' oh bo' ohl",
     "<s>barking like a dog.</s> i mean type shit",
-    "paranormal groaning"
+    "paranormal groaning",
+    "glorious leader has declared backshots only summer!",
+    "don't eat that...",
+    "i'm gonna hold your bush while i say this..."
 ]
 
 async function load_home(){

@@ -37,6 +37,10 @@ function createTag(tagtype,tagid,tagclass){
         tag.setAttribute('class', tagclass);
     }
     document.body.appendChild(tag);
+    
+    if (wwDebug == true){
+        console.log("wrote element of type <" + tagtype + "> with id #" + tagid + " (with class(es) ." + tagclass)
+    }
 }
 
 function createTagUnderParent(tagtype,tagid,tagclass,parentid){
@@ -48,6 +52,9 @@ function createTagUnderParent(tagtype,tagid,tagclass,parentid){
         tag.setAttribute('class', tagclass);
     }
     document.getElementById(parentid).appendChild(tag);
+    if (wwDebug == true){
+        console.log("wrote element of type <" + tagtype + "> with id #" + tagid + " to parent #" + parentid + " (with classes) ." + tagclass)
+    }
 }
 
 function giveTagClass(tagid,cssclass){
