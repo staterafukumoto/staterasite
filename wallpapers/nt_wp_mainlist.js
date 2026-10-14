@@ -8,6 +8,8 @@
 // (the filenames must be the EXACT same in both directories.)
 
 wallpapers = [
+    ["transience","transience.jpg","7680 × 4320 (8k)"],
+    ["temporality","temporality.jpg","7680 × 4320 (8k)"],
     ["shine lattice","shine_lattice.jpg","7680 × 4320 (8k)"],
     ["think lattice","think_lattice.jpg","7680 × 4320 (8k)"],
     ["eternal lattice","eternal_lattice.jpg","7680 × 4320 (8k)"],
